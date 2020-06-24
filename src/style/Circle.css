@@ -1,0 +1,40 @@
+.content-circle{
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+}
+
+.circuloRojo {
+    position: absolute;
+    top: 400px;
+    left: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(233, 10, 10);
+}
+
+.circuloVerde {
+    
+    position: absolute;
+    top: 360px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(24, 180, 37);
+}
+
+.circuloAzul {
+    position: absolute;
+    top: 380px;
+    right: 690px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid rgb(22, 9, 200);
+}
+@media (min-width: 992px) {
+    .content-circle{
+        position: relative;
+    }
+}

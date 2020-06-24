@@ -1,0 +1,30 @@
+.grid-actividad{
+    margin-bottom: 20px;
+    background-color: #d6d6d6;
+    border-radius: 15px;
+}
+
+.btn-asignar{
+    background-color: #403e46;
+    color: #fff;
+    height: 6vh;
+    width: 51%;
+    font-size: 12px;
+    border: 0px;
+    border-radius: 5px;
+}
+
+.title-grid{
+    margin: 0;
+}
+
+.btn-actividad{  
+    border: 0px;
+    font-size: 13px;
+    background-color: #F95F62;
+    border-radius: 10px;
+    margin-bottom: 6px;
+}
+
+
+

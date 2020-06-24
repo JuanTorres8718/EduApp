@@ -1,0 +1,86 @@
+.toggler {
+    border-radius: 50%;
+    border: 2px solid ;
+    border-color: #1d2124;
+    transform: scale(0.8);
+    width: 28%;
+}
+
+.content-buttons{
+    width: 40%;
+}
+
+.content-buttons button:focus{
+    outline: none;
+}
+
+.drown-items{
+    display: block;
+    width: 100%;
+    padding: .25rem 0px .25rem 0px;
+    clear: both;
+    font-weight: 400;
+    color: #212529;
+    text-align: inherit;
+    white-space: nowrap;
+    background-color: transparent;
+    border: 0;   
+}
+
+#width-modal{
+    width: 85%;
+    margin: auto;
+    margin-top: 32px;
+}
+
+.input-public{
+    display: block;
+    width: 90%;
+    margin: auto;
+    height: calc(1.5em + .75rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.main{
+    margin-top: 17%
+}
+
+.main .card{
+    margin-bottom: 5%;
+}
+
+.main .title-card{
+    margin-bottom: 17px;
+}
+
+.main .title-card .content-subtitle{
+    margin-left: 14%;
+}
+
+.main .title-card .content-subtitle p{
+    margin:0;
+}
+
+.main .title-card .content-subtitle .width-title{
+    width: 50%;
+    margin:0;
+}
+
+.main .title-card .icon-card{
+    width: 8%;
+    height: 4vh;
+    transform: scale(2);
+    border-radius: 50%;
+    border: 3px solid;
+    margin-left: 6%;
+}
+

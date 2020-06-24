@@ -1,0 +1,56 @@
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faPlusCircle, faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
+import NavAula from '../componentAula/NavAula'
+import '../../../style/VerActividad.css'
+
+const VerActividad = () => {
+	return (
+		<div className='container-fluid'>
+			<Link to='/Actividades'>
+				<FontAwesomeIcon className='back-activity' icon={faArrowLeft} />
+			</Link>
+			<div className='fixed-top'>
+				<NavAula />
+			</div>
+			<div className='mt-5 pt-4 text-center'>
+				<h5 className='mb-4'>Actividad 1</h5>
+			</div>
+			<div className='form-group'>
+				<p>
+					Descripción: Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+					sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+				</p>
+			</div>
+			<div className='form-group'>
+				<small>Fecha limite: 04/05/2020</small>
+			</div>
+			<div className='form-group'>
+				<h6>Estudiantes que han entregado:</h6>
+				<ul className='list-group list-group-flush'>
+					<li className='list-group-item d-flex justify-content-between'>
+						Pepe Mujica
+						<Link to='/Actividades/VerActividad/Calificaciones'>
+							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
+						</Link>
+					</li>
+					<li className='list-group-item d-flex justify-content-between'>
+						Elon Musk
+						<Link to='/Actividades/VerActividad/Calificaciones'>
+							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
+						</Link>
+					</li>
+					<li className='list-group-item d-flex justify-content-between'>
+						France Urrutia
+						<Link to='/Actividades/VerActividad/Calificaciones'>
+							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
+						</Link>
+					</li>
+				</ul>
+			</div>
+		</div>
+	)
+}
+
+export default VerActividad
