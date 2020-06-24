@@ -1,12 +1,12 @@
 import React from 'react'
 import '../../style/Circle.css'
 
-const CircleComponent = () => {
+const CircleComponent = ({ rojo, verde, azul }) => {
 	return (
 		<div className='content-circle'>
-			<div className='circuloRojo'></div>
-			<div className='circuloVerde'></div>
-			<div className='circuloAzul'></div>
+			<div className={`circuloRojo ${rojo}`}></div>
+			<div className={`circuloVerde ${verde}`}></div>
+			<div className={`circuloAzul ${azul}`}></div>
 		</div>
 	)
 }
