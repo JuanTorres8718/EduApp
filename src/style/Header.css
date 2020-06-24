@@ -2,3 +2,7 @@
   border: 4px solid #F95F62;
   border-radius: 30%;
 }
+
+.header {
+  max-height: 200px;
+}
