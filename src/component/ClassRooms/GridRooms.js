@@ -19,7 +19,7 @@ const GridClassRoom = () =>{
     url="https://www.entramar.mvl.edu.ar/wp-content/uploads/2019/03/smart32.jpg"
     name='MATEMATICAS'
     profesor='Erika Otalvaro'
-    participants='16 participantes '/>
+    participants='30 participantes '/>
     <IndividualRoom
     styles={varStyles.styleBlue}
     />
