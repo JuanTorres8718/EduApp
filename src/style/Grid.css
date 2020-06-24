@@ -1,0 +1,10 @@
+.grid {
+  height: 100px;
+  border-radius: 30%;
+  
+}
+
+
+.icon{
+  transform: scale(2);
+}
