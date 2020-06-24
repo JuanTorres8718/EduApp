@@ -1,0 +1,12 @@
+.plus{
+    transform: scale(1.5);
+    color: gray;
+}
+
+.back-activity{
+    position: absolute;
+    transform: scale(2);
+    left: 28px;
+    top: 80px;
+    color: gray;
+}

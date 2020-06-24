@@ -1,0 +1,51 @@
+.cont-name-student{
+    margin-top: 18%;
+    margin-left: 20px;
+}
+
+.letter-name{
+    width: 40px;
+    background-color: #525252;
+    color: #fff;
+    height: 40px;
+    position: absolute;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-name{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    background: #a29fa5;
+    border-radius: 20px;
+    width: 70%;
+}
+
+.cont-img{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+
+.date-send{
+    width: 90%;
+    margin: auto;
+}
+
+.cont-comment{
+    width: 90%;
+    margin: auto;
+}
+
+.button-send{
+    margin-left: 20px;
+    margin-top: 15px;
+    border-radius: 12px;
+    width: 90%;
+    border: 0px;
+    background-color: #77D353;
+}

@@ -1,0 +1,19 @@
+.publicar {
+    position: absolute;
+    right: 20px;
+    top: 40px;
+    color: #565353;
+    font-weight: bold;
+}
+
+.card-public{
+    margin-bottom: 25px;
+}
+
+.photo-public{
+    transform: scale(1.5);
+}
+
+.title-public{
+    margin-left: 15px;
+}

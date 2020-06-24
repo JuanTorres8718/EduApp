@@ -1,0 +1,33 @@
+.content-circle{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.circuloRojo {
+    position: absolute;
+    left: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #F95F62;
+}
+
+.circuloVerde {
+    position: absolute;
+    top: 36px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #77D353;
+}
+
+.circuloAzul {
+    position: absolute;
+    right: 1px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #00A6FF;
+}
