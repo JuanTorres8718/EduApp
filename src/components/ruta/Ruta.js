@@ -3,8 +3,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import App from '../../pages/App'
 import Registro from '../componentePrincipal/Registro'
 import Ingreso from '../componentePrincipal/Ingreso'
-import Student from '../../pages/Student'
-import ClassRoom from '../../pages/ClassRoom'
+import Perfil from '../../pages/Perfil'
+import TusAulas from '../../pages/TusAulas'
 import TuAula from '../aula/TuAula'
 import Ajustes from '../aula/Ajustes'
 import FormAula from '../aula/FormAula'
@@ -20,8 +20,8 @@ const Ruta = () => (
 			<Route exact path='/' component={App}></Route>
 			<Route path='/Registro' component={Registro} />
 			<Route path='/Ingreso' component={Ingreso} />
-			<Route exact path='/perfil' component={Student} />
-			<Route exact path='/ClassRoom' component={ClassRoom} />
+			<Route exact path='/perfil' component={Perfil} />
+			<Route exact path='/ClassRoom' component={TusAulas} />
 			<Route exact path='/AulaMatematicas' component={TuAula} />
 			<Route exact path='/' component={FormAula} />
 			<Route exact path='/TuAula/Ajustes' component={Ajustes} />
