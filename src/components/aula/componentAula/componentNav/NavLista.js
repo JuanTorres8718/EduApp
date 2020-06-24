@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-const NavList = () => {
+const NavLista = () => {
 	return (
 		<ul className='navbar-nav'>
 			<li className='nav-item'>
@@ -41,4 +41,4 @@ const NavList = () => {
 	)
 }
 
-export default NavList
+export default NavLista
