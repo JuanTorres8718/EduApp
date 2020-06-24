@@ -16,7 +16,7 @@ const IndividualAula = ({
 	})
 	return (
 		<Link
-			to={`/${ruta}`}
+			to={`/AulaMatematicas`}
 			className={` col-3 ${styles}  IndividualRoom grid p-3 m-2 d-flex align-items-center flex-column  justify-content-center col-4 col-lg-3 col-md-3 text-dark`}
 		>
 			<ImagenAulas imageUrl={url} sty={varStyle.styleCircle}></ImagenAulas>

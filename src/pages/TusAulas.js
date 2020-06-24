@@ -5,4 +5,4 @@ const TusAulas = () => {
 	return <GridAulas></GridAulas>
 }
 
-export default TusAulas;
+export default TusAulas

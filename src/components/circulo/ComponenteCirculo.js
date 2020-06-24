@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../style/Circle.css'
 
-const CircleComponent = ({ rojo, verde, azul }) => {
+const ComponenteCirculo = ({ rojo, verde, azul }) => {
 	return (
 		<div className='content-circle'>
 			<div className={`circuloRojo ${rojo}`}></div>
@@ -11,4 +11,4 @@ const CircleComponent = ({ rojo, verde, azul }) => {
 	)
 }
 
-export default CircleComponent
+export default ComponenteCirculo
