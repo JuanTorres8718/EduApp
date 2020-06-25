@@ -7,8 +7,8 @@ import Perfil from '../../pages/Perfil'
 import TusAulas from '../../pages/TusAulas'
 import TuAula from '../aula/TuAula'
 import Ajustes from '../aula/Ajustes'
-import FormAula from '../aula/FormAula'
-import PublicInfo from '../aula/PublicInfo'
+import FormularioAula from '../aula/FormularioAula'
+import PublicarInformacion from '../aula/PublicarInformacion'
 import Calificaciones from '../aula/Calificaciones'
 import Actividades from '../aula/Actividades'
 import AsignarActividad from '../aula/componenteActividad/AsignarActividad'
@@ -21,11 +21,11 @@ const Ruta = () => (
 			<Route path='/Registro' component={Registro} />
 			<Route path='/Ingreso' component={Ingreso} />
 			<Route exact path='/perfil' component={Perfil} />
-			<Route exact path='/ClassRoom' component={TusAulas} />
+			<Route exact path='/TusAulas' component={TusAulas} />
 			<Route exact path='/AulaMatematicas' component={TuAula} />
-			<Route exact path='/' component={FormAula} />
+			<Route exact path='/' component={FormularioAula} />
 			<Route exact path='/TuAula/Ajustes' component={Ajustes} />
-			<Route exact path='/Publicar' component={PublicInfo} />
+			<Route exact path='/Publicar' component={PublicarInformacion} />
 			<Route
 				exact
 				path='/Actividades/AsignarActividad'

@@ -21,7 +21,7 @@ const GridGroup = () => {
 				style={varStyle.styleBlue}
 				icon={faChalkboardTeacher}
 				name='Tus Aulas'
-				ruta='ClassRoom'
+				ruta='TusAulas'
 			/>
 			<Grid
 				style={varStyle.styleGreen}
