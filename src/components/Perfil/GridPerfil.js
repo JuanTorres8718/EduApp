@@ -16,9 +16,9 @@ const GridGroup = () => {
 		styleNav: 'circle',
 	})
 	return (
-		<div className='d-flex flex-wrap p-2 d-flex justify-content-center'>
+		<div className='d-flex flex-wrap p-2 d-flex justify-content-center '>
 			<Grid
-				style={varStyle.styleBlue}
+				style={varStyle.styleGreen}
 				icon={faChalkboardTeacher}
 				name='Tus Aulas'
 				ruta='TusAulas'
@@ -28,11 +28,11 @@ const GridGroup = () => {
 				icon={faCalendarAlt}
 				name='Calendario'
 			/>
-			<Grid style={varStyle.stylePink} icon={faGamepad} name='Juegos' />
-			<Grid style={varStyle.styleBlue} icon={faUserEdit} name='Editar Perfil' />
+			<Grid style={varStyle.styleGreen} icon={faGamepad} name='Juegos' />
+			<Grid style={varStyle.styleGreen} icon={faUserEdit} name='Editar Perfil' />
 			<Grid style={varStyle.styleGreen} icon={faFileContract} name='Examenes' />
 			<Grid
-				style={varStyle.stylePink}
+				style={varStyle.styleGreen}
 				icon={faHourglassHalf}
 				name='Proximas Clases'
 			/>
