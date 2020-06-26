@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-import '../../style/IndividualRoom.css'
+// import '../../style/ClaseIndividual.css'
 import ImagenAulas from './ImagenAulas'
 
 const IndividualAula = ({

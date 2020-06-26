@@ -4,7 +4,7 @@ import '../../style/Main.css'
 
 const Main = () => {
 	return (
-		<div className='main'>
+		<div className='main m-0'>
 			<GridPerfil />
 		</div>
 	)
