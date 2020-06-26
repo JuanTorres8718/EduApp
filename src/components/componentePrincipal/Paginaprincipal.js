@@ -12,7 +12,7 @@ class Principal extends Component {
 	}
 	render() {
 		return (
-			<div>
+			<div className='container-fluid'>
 				<img
 					src='https://www.tourismburlington.com/wp-content/uploads/2013/04/fun-for-kids-header.jpg'
 					className='w-100'
@@ -20,45 +20,42 @@ class Principal extends Component {
 				></img>
 				<h1 className='titlefont text-center m-5'>Los Deschabetados.com</h1>
 				<div className='row'>
-					<div className='row'>
-						<img
-							src='https://thumbs.dreamstime.com/z/male-teacher-classroom-students-cartoon-illustration-97538576.jpg'
-							className='col-sm-6 col-lg-3 ml-lg-4 float-left img_principal'
-							alt='imagen profesor'
-						></img>
-						<p className='generalfont text-center mt-5 col-sm-6 col-lg-8'>
-							Crea tu aula, invita a tus alumnos, interactua con Docentes y
-							padres
-						</p>
-						<div></div>
-						<h1 className='titlefont col-md-7 offset-md-2 text-center mt-5 mb-5'>
-							¿Que tenemos para ofrecerte?
-						</h1>
-						<div className='container-fluid'>
-							<div className='row mt-1 mb-2'>
-								<p className='generalfont text-center mt-5 col-sm-5 ml-sm-5 col-lg-7'>
-									Sabemos que la educación necesita herramientas adicionales
-									para su eficiencia. Los deschabetados.com te ofrece una pagina
-									dinamica que secciona cada tarea educativa.
-								</p>
-								<img
-									src='https://thumbs.dreamstime.com/z/classroom-cartoon-illustration-background-school-lesson-vector-education-design-decorative-75664279.jpg'
-									className='col-sm-5 ml-sm-4 col-lg-4 float-right img_principal'
-									alt='salon de clase'
-								></img>
-							</div>
-							<div className='row mt-2'>
-								<img
-									src='https://thumbs.dreamstime.com/z/empty-classroom-cartoon-empty-classroom-interior-cartoon-vector-illustration-graphic-design-113273479.jpg'
-									className='col-sm-6 col-lg-4 ml-lg-4 float-left img_principal'
-									alt='classroom'
-								></img>
-								<p className='generalfont text-center mt-5 col-sm-6 col-lg-7'>
-									Encontraras una comunicacion fluida con los docentes,
-									herramientas como videollamadas, clases grabadas, material de
-									apoyo, agenda de actividades, chats y dashboards.
-								</p>
-							</div>
+					<img
+						src='https://thumbs.dreamstime.com/z/male-teacher-classroom-students-cartoon-illustration-97538576.jpg'
+						className='col-sm-6 col-lg-3 ml-lg-4 float-left img_principal'
+						alt='imagen profesor'
+					></img>
+					<p className='generalfont text-center mt-5 col-sm-6 col-lg-8'>
+						Crea tu aula, invita a tus alumnos, interactua con Docentes y padres
+					</p>
+					<div></div>
+					<h1 className='titlefont col-md-7 offset-md-2 text-center mt-5 mb-5'>
+						¿Que tenemos para ofrecerte?
+					</h1>
+					<div className='container-fluid'>
+						<div className='row mt-1 mb-2'>
+							<p className='generalfont text-center mt-5 col-sm-5 ml-sm-5 col-lg-7'>
+								Sabemos que la educación necesita herramientas adicionales para
+								su eficiencia. Los deschabetados.com te ofrece una pagina
+								dinamica que secciona cada tarea educativa.
+							</p>
+							<img
+								src='https://thumbs.dreamstime.com/z/classroom-cartoon-illustration-background-school-lesson-vector-education-design-decorative-75664279.jpg'
+								className='col-sm-5 ml-sm-4 col-lg-4 float-right img_principal'
+								alt='salon de clase'
+							></img>
+						</div>
+						<div className='row mt-2'>
+							<img
+								src='https://thumbs.dreamstime.com/z/empty-classroom-cartoon-empty-classroom-interior-cartoon-vector-illustration-graphic-design-113273479.jpg'
+								className='col-sm-6 col-lg-4 ml-lg-4 float-left img_principal'
+								alt='classroom'
+							></img>
+							<p className='generalfont text-center mt-5 col-sm-6 col-lg-7'>
+								Encontraras una comunicacion fluida con los docentes,
+								herramientas como videollamadas, clases grabadas, material de
+								apoyo, agenda de actividades, chats y dashboards.
+							</p>
 						</div>
 					</div>
 				</div>

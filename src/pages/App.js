@@ -15,7 +15,7 @@ const App = () => {
 					Los deschabetados
 				</span>
 				<button
-					class='navbar-toggler'
+					className='navbar-toggler'
 					type='button'
 					data-toggle='collapse'
 					data-target='#navbarNavAltMarkup'
@@ -23,10 +23,10 @@ const App = () => {
 					aria-expanded='false'
 					aria-label='Toggle navigation'
 				>
-					<span class='navbar-toggler-icon'></span>
+					<span className='navbar-toggler-icon'></span>
 				</button>
-				<div class='collapse navbar-collapse' id='navbarNavAltMarkup'>
-					<div class='navbar-nav'>
+				<div className='collapse navbar-collapse' id='navbarNavAltMarkup'>
+					<div className='navbar-nav'>
 						<Link className='nav-item nav-link' to='/'>
 							Home
 						</Link>
@@ -42,7 +42,7 @@ const App = () => {
 					</div>
 				</div>
 			</nav>
-			<Principal></Principal>
+			<Principal />
 		</section>
 	)
 }
