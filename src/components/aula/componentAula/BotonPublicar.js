@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const BotonPublicar = () => {
+const PublicForm = () => {
 	return (
 		<form className=' my-2 my-lg-0'>
 			<Link to='/Publicar'>
@@ -16,4 +16,4 @@ const BotonPublicar = () => {
 	)
 }
 
-export default BotonPublicar
+export default PublicForm

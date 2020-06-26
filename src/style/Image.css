@@ -1,3 +1,5 @@
 .image {
-  max-height: 200px
+  max-height: 200px;
+  max-width: 230px;
+  min-width: 50px;
 }
