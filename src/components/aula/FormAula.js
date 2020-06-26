@@ -1,8 +1,8 @@
 import React from 'react'
-import CircleComponent from '../circulo/ComponenteCirculo'
-import '../../style/FormularioAula.css'
+import CircleComponent from '../circle/CircleComponent'
+import '../../style/FormAula.css'
 
-const FormularioAula = () => {
+const FormAula = () => {
 	return (
 		<div className='container-form pt-4'>
 			<CircleComponent />
@@ -36,4 +36,4 @@ const FormularioAula = () => {
 	)
 }
 
-export default FormularioAula
+export default FormAula

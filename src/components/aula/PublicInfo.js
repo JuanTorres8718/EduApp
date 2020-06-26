@@ -8,9 +8,9 @@ import {
 	faVideo,
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
-import '../../style/PublicarInformacion.css'
+import '../../style/PublicInfo.css'
 
-const PublicarInformacion = () => {
+const PublicInfo = () => {
 	return (
 		<div className='container-form pt-4'>
 			<Link to='/AulaMatematicas'>
@@ -66,4 +66,4 @@ const PublicarInformacion = () => {
 	)
 }
 
-export default PublicarInformacion
+export default PublicInfo

@@ -11,7 +11,7 @@ const Achivements = () => {
 				<FontAwesomeIcon icon={faTrophy} className='points' id='points' />
 				<p className="lp" >Logros</p>
 			</div>
-			<div className='col-5   d-flex flex-column align-items-center'>
+			<div className='col-5 d-flex flex-column align-items-center'>
 				<FontAwesomeIcon icon={faMedal} className='points' />
 				<p className="lp">Puntos</p>
 			</div>

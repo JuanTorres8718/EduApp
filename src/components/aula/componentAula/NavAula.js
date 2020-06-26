@@ -6,8 +6,8 @@ import {
 	faQuestion,
 	faBell,
 } from '@fortawesome/free-solid-svg-icons'
-import ModalAyuda from './componentNav/ModalAyuda'
-import NavLista from './componentNav/NavLista'
+import ModalQuestion from './componentNav/ModalQuestion'
+import NavList from './componentNav/NavList'
 
 const NavAula = () => {
 	return (
@@ -27,7 +27,7 @@ const NavAula = () => {
 				>
 					<FontAwesomeIcon icon={faQuestion} />
 				</a>
-				<ModalAyuda />
+				<ModalQuestion />
 				<button
 					className='toggler'
 					type='button'
@@ -41,7 +41,7 @@ const NavAula = () => {
 				</button>
 			</div>
 			<div className='collapse navbar-collapse' id='navbarNav'>
-				<NavLista />
+				<NavList />
 			</div>
 		</nav>
 	)
