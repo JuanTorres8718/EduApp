@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import flores from '../../images/flower.jpg'
 import { Link } from 'react-router-dom'
 
 class Registro extends Component {
@@ -158,9 +157,6 @@ class Registro extends Component {
 							>
 								Adelante
 							</button>
-							<div className='container-fluid'>
-								<img src={flores} alt='flores' className='w-100'></img>
-							</div>
 						</form>
 					</div>
 				</div>
