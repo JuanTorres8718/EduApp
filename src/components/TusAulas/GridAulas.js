@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import IndividualAula from './IndividualAula'
-import '../../style/GridRoom.css'
+import '../../style/GridAulas.css'
 
 const GridAulas = () => {
 	const [varStyles] = useState({

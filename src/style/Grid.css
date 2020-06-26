@@ -1,10 +1,12 @@
 .grid {
-  height: 100px;
-  border-radius: 30%;
-  
+  border-radius: 30%;  
 }
-
 
 .icon{
-  transform: scale(2);
+  transform: scale(1.1);
 }
+
+#grid{
+  height: 110px;
+}
+
