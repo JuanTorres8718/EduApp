@@ -20,6 +20,7 @@ class Ingresar extends Component {
 							<div className='form-group col-sm-12'>
 								<label for='exampleInputEmail1' className='ingresofont'>
 									Correo electrónico
+									
 								</label>
 								<input
 									type='email'
