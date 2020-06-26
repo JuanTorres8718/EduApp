@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import photoMath from '../../../images/matematicas.PNG'
 
-const CardPublic = () => {
+const CardPublicacion = () => {
 	return (
 		<div className='card'>
 			<div className='card-body'>
@@ -39,4 +39,4 @@ const CardPublic = () => {
 	)
 }
 
-export default CardPublic
+export default CardPublicacion

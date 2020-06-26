@@ -1,7 +1,7 @@
 import React from 'react'
 import NavAula from '../aula/componentAula/NavAula'
-import PublicForm from '../aula/componentAula/PublicForm'
-import CardPublic from './componentAula/CardPublic'
+import BotonPublicar from './componentAula/BotonPublicar'
+import CardPublicacion from './componentAula/CardPublicacion'
 import '../../style/TuAula.css'
 
 const TuAula = () => {
@@ -12,8 +12,8 @@ const TuAula = () => {
 					<NavAula />
 				</div>
 				<div className='main'>
-					<PublicForm />
-					<CardPublic />
+					<BotonPublicar />
+					<CardPublicacion />
 				</div>
 			</div>
 		</React.Fragment>
