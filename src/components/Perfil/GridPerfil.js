@@ -29,7 +29,11 @@ const GridGroup = () => {
 				name='Calendario'
 			/>
 			<Grid style={varStyle.styleGreen} icon={faGamepad} name='Juegos' />
-			<Grid style={varStyle.styleGreen} icon={faUserEdit} name='Editar Perfil' />
+			<Grid
+				style={varStyle.styleGreen}
+				icon={faUserEdit}
+				name='Editar Perfil'
+			/>
 			<Grid style={varStyle.styleGreen} icon={faFileContract} name='Examenes' />
 			<Grid
 				style={varStyle.styleGreen}

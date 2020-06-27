@@ -9,11 +9,11 @@ const Achivements = () => {
 		<div className='row col-8 col-lg-4 col-md-4 col-sm-5 p-1 logros d-flex justify-content-between'>
 			<div className='col-5 d-flex flex-column align-items-center '>
 				<FontAwesomeIcon icon={faTrophy} className='points' id='points' />
-				<p className="lp" >Logros</p>
+				<p className='lp'>Logros</p>
 			</div>
 			<div className='col-5   d-flex flex-column align-items-center'>
 				<FontAwesomeIcon icon={faMedal} className='points' />
-				<p className="lp">Puntos</p>
+				<p className='lp'>Puntos</p>
 			</div>
 		</div>
 	)

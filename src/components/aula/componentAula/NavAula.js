@@ -11,8 +11,8 @@ import NavLista from './componentNav/NavLista'
 
 const NavAula = () => {
 	return (
-		<nav className='navbar navbar-expand-lg navbar-light bg-light'>
-			<a className='navbar-brand' href='/'>
+		<nav className='navbar navbar-expand-lg navbar-light back-color'>
+			<a className='navbar-brand' href='/AulaMatematicas'>
 				<FontAwesomeIcon icon={faUser} />
 			</a>
 			<div className='content-buttons d-flex justify-content-between'>
@@ -29,7 +29,8 @@ const NavAula = () => {
 				</a>
 				<ModalAyuda />
 				<button
-					className='toggler'
+					className='navbar-toggler'
+					id='toggleAula'
 					type='button'
 					data-toggle='collapse'
 					data-target='#navbarNav'
@@ -40,7 +41,10 @@ const NavAula = () => {
 					<FontAwesomeIcon icon={faGripLines} />
 				</button>
 			</div>
-			<div className='collapse navbar-collapse' id='navbarNav'>
+			<div
+				className='collapse navbar-collapse justify-content-end'
+				id='navbarNav'
+			>
 				<NavLista />
 			</div>
 		</nav>

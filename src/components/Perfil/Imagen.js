@@ -5,4 +5,4 @@ const Imagen = ({ imageUrl, sty }) => {
 	return <img src={imageUrl} alt='avatar' className={`${sty} `} />
 }
 
-export default Imagen;
+export default Imagen

@@ -4,7 +4,7 @@ import '../../style/FormularioAula.css'
 
 const FormularioAula = () => {
 	return (
-		<div className='container-form pt-4'>		
+		<div className='container-form pt-4'>
 			<div className='form-grop text-center pt-5 pb-4'>
 				<h4>Crea tu aula</h4>
 			</div>

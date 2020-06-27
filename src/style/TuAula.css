@@ -6,6 +6,8 @@
     width: 28%;
 }
 
+
+
 .content-buttons{
     width: 40%;
 }
@@ -48,10 +50,11 @@
     border: 1px solid #ced4da;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    margin-bottom: 16px;
 }
 
 .main{
-    margin-top: 17%
+    margin-top: 75px;
 }
 
 .main .card{
@@ -63,7 +66,7 @@
 }
 
 .main .title-card .content-subtitle{
-    margin-left: 14%;
+    margin-left: 25px;
 }
 
 .main .title-card .content-subtitle p{
@@ -77,12 +80,54 @@
 }
 
 .main .title-card .icon-card{
-    width: 8%;
-    height: 4vh;
-    transform: scale(2);
+    width: 35px;
+    height: 35px;
+    transform: scale(1.5);
     border-radius: 50%;
     border: 3px solid;
     margin-left: 6%;
+}
 
+#toggleAula{
+    border-radius: 50%;
+    border: 2px solid white;
+    opacity: 0.7;
+    height: 7vh;
+}
+#toggleAula:focus{
+    margin: 0px;
+    outline: none;
+}
+
+.back-color{
+    background-color: #6EB62C;
+}
+
+.img-publicacion{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+}
+
+/* .page-aula{
+    width: 70%;
+    margin-left: 28%;
+}
+
+nav{
+    width: 27%;
+    height: 101vh;
+    flex-direction: column;
+}
+
+main{
+    margin-top: 12px;
+} */
+
+
+@media only screen and (min-width:600px){
+    .content-buttons{
+        width: 25%;
+    }
 }
 
