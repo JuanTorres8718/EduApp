@@ -13,15 +13,19 @@ const CardPublicacion = () => {
 	return (
 		<div className='card'>
 			<div className='card-body'>
-				<div className='title-card d-flex align-items-center'>
+				<div className='title-card d-flex align-items-center justify-content-center'>
 					<FontAwesomeIcon className='icon-card' icon={faUser} />
 					<div className='content-subtitle d-flex flex-column'>
 						<h6 className='width-title'>Actividad 1</h6>
 						<p>Operaciones aritmeticas</p>
 					</div>
 				</div>
-				<img src={photoMath} className='img-fluid' alt='matematicas' />
-				<p className='card-text'>
+				<img
+					src={photoMath}
+					className='img-fluid img-publicacion'
+					alt='matematicas'
+				/>
+				<p className='card-text text-justify'>
 					Compañeros les comparto una foto de como podria ser el trabajo. pueden
 					mirarlo y estudiar, que mañana les preguntare acerca de esto
 				</p>
