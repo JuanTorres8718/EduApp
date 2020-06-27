@@ -17,7 +17,7 @@ const Header = ({ institution }) => {
         name="Juan Torres"
         profesion="Estudiante de 10 grado">
 			</TextHeader>
-			<div className="col-4 d-flex justify-content-center">
+			<div className="col-12 col-md-4 d-flex justify-content-center">
       <Imagen imageUrl={Avatar} sty={varStyle.styleAvatar} />
 			</div>
       <section className="col-12 d-flex justify-content-between mt-2">		

@@ -1,7 +1,9 @@
 .grid {
   border-radius: 30%;
+  background-color: lawngreen ;
 }
 
 .circle {
   border-radius: 50%;
 }
+

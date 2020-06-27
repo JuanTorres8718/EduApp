@@ -5,7 +5,8 @@ import '../style/Perfil.css'
 
 function Perfil() {
 	return (
-		<div className='container-fluid perfil'>		
+		<div className='container-fluid perfil'
+		id="perfil">		
 			<Header 
 			institution='Bello' />
 			<Main></Main>					

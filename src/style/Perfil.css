@@ -3,3 +3,13 @@
   background-color: #f4f4f4;
   border-radius: 5%;
 } 
+
+#perfil {
+  font-size: 2.5rem;
+}
+
+@media only screen and (max-width: 500px) {
+  #perfil {
+    font-size: 1.8rem;
+  }
+}
