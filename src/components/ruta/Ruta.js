@@ -23,7 +23,7 @@ const Ruta = () => (
 			<Route exact path='/perfil' component={Perfil} />
 			<Route exact path='/TusAulas' component={TusAulas} />
 			<Route exact path='/AulaMatematicas' component={TuAula} />
-			<Route exact path='/' component={FormularioAula} />
+			<Route exact path='/NuevaAula' component={FormularioAula} />
 			<Route exact path='/TuAula/Ajustes' component={Ajustes} />
 			<Route exact path='/Publicar' component={PublicarInformacion} />
 			<Route

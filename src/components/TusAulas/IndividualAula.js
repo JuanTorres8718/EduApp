@@ -20,7 +20,7 @@ const IndividualAula = ({
 			id="IndividualRoom"
 		>
 			<ImagenAulas imageUrl={url} style={varStyle.styleCircle}></ImagenAulas>
-			<h5 className='m-1 text-center'>{name}</h5>
+			<h5 className='m-1 text-center Englebert'>{name}</h5>
 			<p>{profesor}</p>
 			<p>{participants}</p>
 		</Link>
