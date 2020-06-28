@@ -8,15 +8,8 @@
 
 @media only screen and (max-width: 500px) {
   .logros {
-    font-size: 1.4rem;
     margin: 0 20px 0 20px;
   }
 
-  .lp{
-    font-size: 1.4rem;
-  }
 
-  .points {
-    transform: scale(1);
-  }
 }

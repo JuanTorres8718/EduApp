@@ -1,36 +1,32 @@
 {
-    "datainformation" : {
-        "usuario": [
-            {
-                "id": 1,
-                "email" : "pepe@pepe.com",
-                "nombre" : "pepe oliveira",
-                "institucion" : "losmolinitos",
-                "password" : "123456",
-                "profesion" : "maestro",
-                "avatar" : ""
-            }
-    
-        ],
-        "aulas" : [
-            {
-                "id" : 1,
-                "nombre_materia" : "Matemáticas",
-                "descripcion" : "espacio para disfrutar de los numeros",
-                "grado" : "Octavo",
-                "participantes" : 23,
-                "usuario" : 1
-            }
-        ],
-        "actividades" : [
-            {
-                "id" : 1,
-                "nombre_actividad" : "logica aritmerica",
-                "fecha_limite" : "04/07/2020",
-                "descripcion" : "mandar captura del ejercicio 1",
-                "aula" : 1
-            }
-        ]
+  "usuario": [
+    {
+      "id": 1,
+      "email": "pepe@pepe.com",
+      "nombre": "pepe oliveira",
+      "institucion": "losmolinitos",
+      "password": "123456",
+      "profesion": "maestro",
+      "avatar": ""
     }
-    
+  ],
+  "aulas": [
+    {
+      "id": 1,
+      "nombre_materia": "Matemáticas",
+      "descripcion": "espacio para disfrutar de los numeros",
+      "grado": "Octavo",
+      "participantes": 23,
+      "usuario": 1
+    }
+  ],
+  "actividades": [
+    {
+      "id": 1,
+      "nombre_actividad": "logica aritmerica",
+      "fecha_limite": "04/07/2020",
+      "descripcion": "mandar captura del ejercicio 1",
+      "aula": 1
+    }
+  ]
 }

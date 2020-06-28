@@ -14,14 +14,14 @@ function Perfil(props) {
 	})
 
 	return (
-		<div className='container-fluid perfil'>
+		<div className='container-fluid perfil'
+		id='perfil'>
 			<Header 
 			institution = {datos.institucion}
 			nombre = {datos.nombre}
 			profesion = {datos.profesion}
-			avatar = {datos.avatar}
-			 />
-			<Main></Main>
+			avatar = {datos.avatar}/>
+			<Main email={datos.email}></Main>
 		</div>
 	)
 }

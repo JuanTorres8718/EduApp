@@ -1,6 +1,6 @@
-.grid {
+.gridAula {
   border-radius: 30%;
-  background-color: #6EB62C;
+  border:1px #6EB62C solid;
 }
 
 .circle {
