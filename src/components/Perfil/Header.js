@@ -6,7 +6,7 @@ import TextHeader from './TextHeader'
 import '../../style/Header.css'
 import Avatar from '../../images/avatarPrueba.jpg'
 
-const Header = ({ institution }) => {
+const Header = ({ nombre, institution, profesion, avatar }) => {
 	const [varStyle] = useState({
 		styleAvatar: 'image',
 	})
@@ -14,14 +14,14 @@ const Header = ({ institution }) => {
 		<div className='row d-flex mt-3  p-4 header'>
 			<TextHeader
 				welcome='Hola'
-				name='Juan Torres'
-				profesion='Estudiante de 10 grado'
+				name={nombre}
+				profesion={profesion}
 			></TextHeader>
-			<div className='col-4 d-flex justify-content-center'>
+			<div className='col-12 col-md-4 d-flex justify-content-center'>
 				<Imagen imageUrl={Avatar} sty={varStyle.styleAvatar} />
 			</div>
-			<section className='col-12 d-flex justify-content-between mt-2'>
-				<p className='col-5 col-md-8 col-lg-8 col-sm-6  pl-0'>{institution}</p>
+			<section className=' row col-12 d-flex justify-content-between mt-2'>
+				<p className='col-12 col-md-8 col-lg-8 col-sm-6 pl-0'>{institution}</p>
 				<Logros />
 			</section>
 		</div>

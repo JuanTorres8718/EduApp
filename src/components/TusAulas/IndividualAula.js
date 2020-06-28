@@ -1,15 +1,13 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
-// import '../../style/ClaseIndividual.css'
-import ImagenAulas from './ImagenAulas'
+import '../../style/IndividualAulas.css'
+// import ImagenAulas from './ImagenAulas'
 
 const IndividualAula = ({
-	styles,
 	participants,
 	name,
-	ruta,
-	profesor,
 	url,
+	grado
 }) => {
 	const [varStyle] = useState({
 		styleCircle: 'circle',
@@ -17,12 +15,13 @@ const IndividualAula = ({
 	return (
 		<Link
 			to={`/AulaMatematicas`}
-			className={` col-3 ${styles}  IndividualRoom grid p-3 m-2 d-flex align-items-center flex-column  justify-content-center col-4 col-lg-3 col-md-3 text-dark`}
+			className={` col-3  gridAula p-4 m-3 d-flex align-items-center flex-column justify-content-center col-7 col-lg-3 col-md-3 text-dark col-xl-2 `}
+			id="IndividualRoom"
 		>
-			<ImagenAulas imageUrl={url} sty={varStyle.styleCircle}></ImagenAulas>
-			<h5 className='m-1 text-center'>{name}</h5>
-			<p>{profesor}</p>
-			<p>{participants}</p>
+			{/* <ImagenAulas imageUrl={url} style={varStyle.styleCircle}></ImagenAulas> */}
+			<h5 className='m-1 text-center Englebert'>{name}</h5>
+			<p>Participantes {participants}</p>
+			<p>{grado}</p>
 		</Link>
 	)
 }

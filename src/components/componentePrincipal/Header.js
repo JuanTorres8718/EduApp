@@ -28,10 +28,10 @@ const Header = () => {
 				</span>
 			</button>
 			<div
-				class='collapse navbar-collapse justify-content-end'
+				className='collapse navbar-collapse justify-content-end'
 				id='navbarNavAltMarkup'
 			>
-				<div class='navbar-nav'>
+				<div className='navbar-nav'>
 					<Link className='nav-item nav-link text-light' to='/'>
 						Home
 					</Link>
