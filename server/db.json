@@ -18,6 +18,14 @@
       "grado": "Octavo",
       "participantes": 23,
       "usuario": 1
+    },
+    {
+      "nombre_materia": "Artes",
+      "descripcion": "Se podra pintar, y esculpir obras de arte",
+      "grado": "Noveno",
+      "participantes": 24,
+      "usuario": 1,
+      "id": 2
     }
   ],
   "actividades": [

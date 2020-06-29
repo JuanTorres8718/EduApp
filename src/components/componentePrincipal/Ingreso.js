@@ -7,45 +7,45 @@ class Ingresar extends Component {
 	constructor(props) {
 		super(props)
 		this.state = {
-			email: "",
-			password: ""
+			email: '',
+			password: '',
 		}
 		this.handleValue = this.handleValue.bind(this)
 		this.login = this.login.bind(this)
 	}
-	handleValue (e) {
-		if(e.target.id === 'email'){
+	handleValue(e) {
+		if (e.target.id === 'email') {
 			this.setState({
-				email: e.target.value
+				email: e.target.value,
 			})
-		}else{
+		} else {
 			this.setState({
-				password: e.target.value
+				password: e.target.value,
 			})
 		}
-	} 
+	}
 
-	login (e) {
-	const { email, password } = this.state
-	e.preventDefault();
-	axios.get('http://localhost:3004/usuario')
-	.then(res => {
-		let usuario = res.data
-		for (let i = 0; i < usuario.length; i++) {
-			if(email === usuario[i].email && password === usuario[i].password){
-				this.props.history.push('/perfil',
-				[{
-					email: usuario[i].email,
-					nombre: usuario[i].nombre,
-					institucion: usuario[i].institucion,
-					profesion: usuario[i].profesion,
-					avatar: usuario[i].avatar	
-				}])
-			}else{
-				alert('Datos incorrectos')	
+	login(e) {
+		const { email, password } = this.state
+		e.preventDefault()
+		axios.get('http://localhost:3004/usuario').then((res) => {
+			let usuario = res.data
+			for (let i = 0; i < usuario.length; i++) {
+				if (email === usuario[i].email && password === usuario[i].password) {
+					this.props.history.push('/perfil', [
+						{
+							email: usuario[i].email,
+							nombre: usuario[i].nombre,
+							institucion: usuario[i].institucion,
+							profesion: usuario[i].profesion,
+							avatar: usuario[i].avatar,
+						},
+					])
+				} else {
+					alert('Datos incorrectos')
+				}
 			}
-		}
-	})
+		})
 	}
 
 	render() {
@@ -67,7 +67,7 @@ class Ingresar extends Component {
 							<input
 								type='email'
 								className='input-form fondo_input'
-								onChange = {this.handleValue}
+								onChange={this.handleValue}
 								id='email'
 								aria-describedby='emailHelp'
 							/>
@@ -79,7 +79,7 @@ class Ingresar extends Component {
 							<input
 								type='password'
 								className='input-form fondo_input'
-								onChange = {this.handleValue}
+								onChange={this.handleValue}
 								id='password'
 							/>
 						</div>

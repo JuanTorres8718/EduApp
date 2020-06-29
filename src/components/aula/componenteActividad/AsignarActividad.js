@@ -4,7 +4,7 @@ import '../../../style/AsignarActividad.css'
 
 const AsignarActividad = () => {
 	return (
-		<div className='container-fluid'>
+		<div className='container-fluid' id='cont-asignar'>
 			<div className='fixed-top'>
 				<NavAula />
 			</div>
@@ -27,13 +27,13 @@ const AsignarActividad = () => {
 						name='bday'
 						min='2000-01-01'
 						max='3000-12-31'
-						class='form-control'
+						className='form-control'
 						id='date'
 					/>
 				</div>
-				<div class='form-group'>
+				<div className='form-group'>
 					<label htmlFor='file'>Adjuntar algun documento.</label>
-					<input type='file' class='form-control-file' id='file' />
+					<input type='file' id='hiddenFileInput' />
 				</div>
 				<div className='text-center'>
 					<button

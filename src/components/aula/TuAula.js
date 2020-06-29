@@ -7,7 +7,7 @@ import '../../style/TuAula.css'
 const TuAula = () => {
 	return (
 		<React.Fragment>
-			<div className='page-aula'>
+			<div className='page-aula' id='cont-page-aula'>
 				<div className='fixed-top'>
 					<NavAula />
 				</div>

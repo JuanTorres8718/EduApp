@@ -6,7 +6,7 @@ import GridActividad from './componenteActividad/GridActividad'
 
 const Actividades = () => {
 	return (
-		<div className='container-fluid'>
+		<div className='container-fluid' id='cont-actividades'>
 			<div className='fixed-top'>
 				<NavAula />
 			</div>
@@ -17,22 +17,22 @@ const Actividades = () => {
 				</Link>
 			</div>
 			<div className='row mt-5'>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
-				<div className='col-4'>
+				<div className='col-12 col-sm-6 col-lg-4'>
 					<GridActividad />
 				</div>
 			</div>
