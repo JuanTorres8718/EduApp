@@ -1,3 +1,15 @@
 #btn-create-activity{
     width: 22vh;
 }
+
+@media only screen and (min-width:990px){
+    #cont-asignar{
+        width: 70%;
+        margin-left: 27%; 
+    }
+
+    #btn-create-activity {
+        width: 31vh;
+        font-size: 25px;
+    }
+}

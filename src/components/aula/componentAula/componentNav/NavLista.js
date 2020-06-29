@@ -11,7 +11,7 @@ import { Link } from 'react-router-dom'
 
 const NavLista = () => {
 	return (
-		<ul className='navbar-nav'>
+		<ul className='navbar-nav' id='lista-page-aula'>
 			<li className='nav-item'>
 				<Link to='/Actividades' className='drown-items'>
 					<FontAwesomeIcon icon={faFileSignature} /> Asignacion de actividades

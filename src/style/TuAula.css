@@ -92,7 +92,7 @@
     border-radius: 50%;
     border: 2px solid white;
     opacity: 0.7;
-    height: 7vh;
+    height: 45px;
 }
 #toggleAula:focus{
     margin: 0px;
@@ -109,25 +109,98 @@
     margin: auto;
 }
 
-/* .page-aula{
-    width: 70%;
-    margin-left: 28%;
+.esconder{
+    display: none;
 }
-
-nav{
-    width: 27%;
-    height: 101vh;
-    flex-direction: column;
-}
-
-main{
-    margin-top: 12px;
-} */
-
 
 @media only screen and (min-width:600px){
     .content-buttons{
         width: 25%;
+    }
+}
+
+@media only screen and (min-width:990px){
+    #cont-page-aula{
+        width: 70%;
+        margin-left: 27%; 
+    }
+
+    #navbar-page-aula{
+        /* width: 25%;
+        height: 100vh;
+        flex-direction: column; */
+        position: fixed;
+        left: 0;
+        width: 25%;
+        height: 100vh;
+        top: 0;
+        flex-direction: column;
+    }
+
+    #home-page-aula{
+        width: 95%;
+        margin-top: 15px;
+        
+    }
+
+    #noti-page-aula{
+        flex-direction: column;
+        height: 15vh;
+        order: 2;
+        width: 103%;
+        margin-top: 12px;
+    }
+
+    #lista-page-aula{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 53vh;
+        font-size: 18px;
+        margin-top: 12px;
+        width: 100%;
+    }
+
+    #navbarNav{
+        flex-grow: 0;
+        width: 103%;
+    }
+
+    .main{
+        margin-top: 27px;
+    }
+
+    .esconder{
+        display: inline;
+        margin: 0;
+        margin-left: 6px;
+    }
+
+    .icon-text{
+        display: flex;
+        align-items: center;
+    }
+
+    #cont-actividades{
+        width: 70%;
+        margin-left: 27%;
+        margin-top: -5%;
+    }
+}
+
+@media only screen and (min-width:1200px){
+    #lista-page-aula, .esconder{
+        font-size: 22px;
+    }
+}
+
+@media only screen and (min-width:1400px){
+    #lista-page-aula, .esconder{
+        font-size: 25px;
+    }
+
+    .size-icon-aula{
+        transform: scale(1.3);
     }
 }
 

@@ -7,7 +7,7 @@ import '../../../style/VerActividad.css'
 
 const VerActividad = () => {
 	return (
-		<div className='container-fluid'>
+		<div className='container-fluid' id='cont-ver-actividad'>
 			<Link to='/Actividades'>
 				<FontAwesomeIcon className='back-activity' icon={faArrowLeft} />
 			</Link>

@@ -10,3 +10,10 @@
     top: 80px;
     color: gray;
 }
+
+@media only screen and (min-width:990px){
+    #cont-ver-actividad{
+        width: 70%;
+        margin-left: 27%;
+    }
+}
