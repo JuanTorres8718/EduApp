@@ -28,9 +28,9 @@ class Ingresar extends Component {
 	login (e) {
 	const { email, password } = this.state
 	e.preventDefault();
-	axios.get('http://localhost:3004/datainformation')
+	axios.get('http://localhost:3004/usuario')
 	.then(res => {
-		let usuario = res.data.usuario
+		let usuario = res.data
 		for (let i = 0; i < usuario.length; i++) {
 			if(email === usuario[i].email && password === usuario[i].password){
 				this.props.history.push('/perfil',
