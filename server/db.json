@@ -8,6 +8,24 @@
       "password": "123456",
       "profesion": "maestro",
       "avatar": ""
+    },
+    {
+      "nombre": "Erika pelotuda pelotudos abc",
+      "institucion": "hospital mental",
+      "email": "erikaabc@hotmail.com",
+      "password": "123456",
+      "numero": "304958746",
+      "avatar": "",
+      "id": 2
+    },
+    {
+      "nombre": "juan chorrillo de las casas abelardo",
+      "institucion": "hospital psiquiatrico",
+      "email": "juangatitossuperfuertes@hotmail.com",
+      "password": "juanjuanjuan",
+      "numero": "304987475",
+      "avatar": "",
+      "id": 3
     }
   ],
   "aulas": [
