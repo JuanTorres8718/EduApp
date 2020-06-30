@@ -1,22 +1,17 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Link } from 'react-router-dom'
 import '../../style/IndividualAulas.css'
 // import ImagenAulas from './ImagenAulas'
 
-const IndividualAula = ({
-	participants,
-	name,
-	url,
-	grado
-}) => {
-	const [varStyle] = useState({
-		styleCircle: 'circle',
-	})
+const IndividualAula = ({ participants, name, url, grado }) => {
+	// const [varStyle] = useState({
+	// 	styleCircle: 'circle',
+	// })
 	return (
 		<Link
 			to={`/AulaMatematicas`}
 			className={` col-3  gridAula p-4 m-3 d-flex align-items-center flex-column justify-content-center col-7 col-lg-3 col-md-3 text-dark col-xl-2 `}
-			id="IndividualRoom"
+			id='IndividualRoom'
 		>
 			{/* <ImagenAulas imageUrl={url} style={varStyle.styleCircle}></ImagenAulas> */}
 			<h5 className='m-1 text-center Englebert'>{name}</h5>

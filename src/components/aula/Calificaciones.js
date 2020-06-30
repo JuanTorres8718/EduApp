@@ -5,7 +5,7 @@ import '../../style/Calificaciones.css'
 
 const Calificaciones = () => {
 	return (
-		<div className='content-fluid'>
+		<div className='content-fluid' id='cont-calificaciones'>
 			<div className='fixed-top'>
 				<NavAula />
 			</div>

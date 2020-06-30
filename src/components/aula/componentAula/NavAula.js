@@ -11,21 +11,34 @@ import NavLista from './componentNav/NavLista'
 
 const NavAula = () => {
 	return (
-		<nav className='navbar navbar-expand-lg navbar-light back-color'>
-			<a className='navbar-brand' href='/AulaMatematicas'>
-				<FontAwesomeIcon icon={faUser} />
+		<nav
+			className='navbar navbar-expand-lg navbar-light back-color'
+			id='navbar-page-aula'
+		>
+			<a
+				className='navbar-brand icon-text'
+				href='/AulaMatematicas'
+				id='home-page-aula'
+			>
+				<FontAwesomeIcon className='size-icon-aula' icon={faUser} />
+				<p className='esconder'>Inicio</p>
 			</a>
-			<div className='content-buttons d-flex justify-content-between'>
-				<a className='navbar-brand' href='/'>
-					<FontAwesomeIcon icon={faBell} />
+			<div
+				className='content-buttons d-flex justify-content-between'
+				id='noti-page-aula'
+			>
+				<a className='navbar-brand icon-text' href='/'>
+					<FontAwesomeIcon className='size-icon-aula' icon={faBell} />
+					<p className='esconder'>Notificaciones</p>
 				</a>
 				<a
-					className='navbar-brand'
+					className='navbar-brand icon-text'
 					data-toggle='modal'
 					data-target='#modalQuestion'
 					href='/'
 				>
-					<FontAwesomeIcon icon={faQuestion} />
+					<FontAwesomeIcon className='size-icon-aula' icon={faQuestion} />
+					<p className='esconder'>Ayuda</p>
 				</a>
 				<ModalAyuda />
 				<button

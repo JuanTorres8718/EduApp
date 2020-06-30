@@ -205,4 +205,4 @@ class Registro extends Component {
   }
 }
 
-export default Registro;
+export default Registro
