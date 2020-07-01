@@ -29,7 +29,7 @@ const NavLista = ({id}) => {
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link to='/AulaMatematicas' className='drown-items text-light'>
+				<Link to='/TuAula/Chat' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faCommentDots} /> Chat Group
 				</Link>
 			</li>
