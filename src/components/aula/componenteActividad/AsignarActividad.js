@@ -33,7 +33,7 @@ const AsignarActividad = () => {
 				</div>
 				<div className='form-group'>
 					<label htmlFor='file'>Adjuntar algun documento.</label>
-					<input type='file' id='hiddenFileInput' />
+					{/* <input type='file' id='hiddenFileInput' /> */}
 				</div>
 				<div className='text-center'>
 					<button

@@ -17,3 +17,60 @@
 .title-public{
   margin-left: 15px;
 }
+
+#nav-publicar-info{
+  display: none;
+}
+
+@media only screen and (min-width:990px){
+  #nav-publicar-info{
+    display: inline;
+  }
+
+  #cont-publicar-info{
+    width: 70%;
+    margin-left: 27%;
+  }
+
+  .contenido-publicar{
+    width: 70%;
+    margin: auto;
+    font-size: 22px;
+  }
+
+  #arrow-help{
+    left: 38%;
+  }
+
+  .publicar {
+    right: 145px
+  }
+  
+  .size-text{
+    font-size: 22px;
+  }
+  
+
+}
+
+
+@media only screen and (min-width:1200px){
+
+  .contenido-publicar{
+    font-size: 25px;
+  }
+
+  #arrow-help{
+    left: 38%;
+  }
+
+  .publicar {
+    right: 207px
+  }
+  
+  .size-text{
+    font-size: 25px;
+  }
+  
+
+}

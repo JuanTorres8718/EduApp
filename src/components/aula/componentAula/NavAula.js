@@ -6,6 +6,7 @@ import {
 	faQuestion,
 	faBell,
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 import ModalAyuda from './componentNav/ModalAyuda'
 import NavLista from './componentNav/NavLista'
 
@@ -16,7 +17,7 @@ const NavAula = () => {
 			id='navbar-page-aula'
 		>
 			<a
-				className='navbar-brand icon-text'
+				className='navbar-brand icon-text text-light'
 				href='/AulaMatematicas'
 				id='home-page-aula'
 			>
@@ -27,19 +28,17 @@ const NavAula = () => {
 				className='content-buttons d-flex justify-content-between'
 				id='noti-page-aula'
 			>
-				<a className='navbar-brand icon-text' href='/'>
+				<a
+					className='navbar-brand icon-text text-light'
+					href='/AulaMatematicas'
+				>
 					<FontAwesomeIcon className='size-icon-aula' icon={faBell} />
 					<p className='esconder'>Notificaciones</p>
 				</a>
-				<a
-					className='navbar-brand icon-text'
-					data-toggle='modal'
-					data-target='#modalQuestion'
-					href='/'
-				>
+				<Link to='/Ayuda' className='navbar-brand icon-text text-light'>
 					<FontAwesomeIcon className='size-icon-aula' icon={faQuestion} />
 					<p className='esconder'>Ayuda</p>
-				</a>
+				</Link>
 				<ModalAyuda />
 				<button
 					className='navbar-toggler'

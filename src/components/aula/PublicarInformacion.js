@@ -13,13 +13,17 @@ import '../../style/PublicarInformacion.css'
 
 const PublicarInformacion = () => {
 	return (
-		<div className='container-form pt-4'>
-			<div className='fixed-top'>
+		<div className='container-form pt-4' id='cont-publicar-info'>
+			<div className='fixed-top' id='nav-publicar-info'>
 				<NavAula />
 			</div>
 			<div className='contenido-publicar'>
 				<Link to='/AulaMatematicas'>
-					<FontAwesomeIcon className='back-arrow' icon={faArrowLeft} />
+					<FontAwesomeIcon
+						className='back-arrow'
+						id='arrow-help'
+						icon={faArrowLeft}
+					/>
 				</Link>
 				<div className='form-grop text-center pt-5 pb-4'>
 					<Link to='/AulaMatematicas' className='publicar'>
@@ -37,26 +41,26 @@ const PublicarInformacion = () => {
 						<form action='/AulaMatematicas'>
 							<div className='form-group'>
 								<textarea
-									className='form-control'
+									className='form-control size-text'
 									id='text-publicacion'
 									rows='4'
 									placeholder='Publica alguna informacion o contenido'
 								></textarea>
 							</div>
 							<div className='form-group'>
-								<a href='/'>
+								<a href='/' className='text-secondary'>
 									<FontAwesomeIcon icon={faCamera} />
 									Fotos/Video
 								</a>
 							</div>
 							<div className='form-group'>
-								<a href='/'>
+								<a href='/' className='text-secondary'>
 									<FontAwesomeIcon icon={faFileUpload} />
 									Documentos
 								</a>
 							</div>
 							<div className='form-group'>
-								<a href='/'>
+								<a href='/' className='text-secondary'>
 									<FontAwesomeIcon icon={faVideo} />
 									Transmitir
 								</a>

@@ -13,27 +13,27 @@ const NavLista = () => {
 	return (
 		<ul className='navbar-nav' id='lista-page-aula'>
 			<li className='nav-item'>
-				<Link to='/Actividades' className='drown-items'>
+				<Link to='/Actividades' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faFileSignature} /> Asignacion de actividades
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link to='/' className='drown-items'>
+				<Link to='/AulaMatematicas' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faVideo} /> Video-Llamada
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link to='/' className='drown-items'>
+				<Link to='/AulaMatematicas' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faCommentDots} /> Chat Group
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link to='/' className='drown-items'>
+				<Link to='/AulaMatematicas' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faCalendarAlt} /> Calendario
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link to='/TuAula/Ajustes' className='drown-items'>
+				<Link to='/TuAula/Ajustes' className='drown-items text-light'>
 					<FontAwesomeIcon icon={faCog} /> Ajustes
 				</Link>
 			</li>
