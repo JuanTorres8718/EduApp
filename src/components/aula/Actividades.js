@@ -43,17 +43,18 @@ const Actividades = (props) => {
 				</Link>
 			</div>
 			<div className='row mt-5'>
-				<div className='col-12 col-sm-6 col-lg-4'>
+			
 				{Actividades.map((actividad) => {
-					return (							
+					return (	
+						<div className='col-12 col-sm-6 col-lg-4'>						
 						<GridActividad 
 							id={actividad.id}
 							fecha={actividad.fecha_limite}
-							descripcion ={actividad.descripcion}				
+							descripcion ={actividad.descripcion}	
 						/>
+							</div>
 						)
-				})}
-				</div>
+				})}			
 			</div>
 		</div>
 	)
