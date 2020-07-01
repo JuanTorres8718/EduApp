@@ -17,10 +17,10 @@ const Header = ({ nombre, institution, profesion, avatar }) => {
 				name={nombre}
 				profesion={profesion}
 			></TextHeader>
-			<div className='col-12 col-md-4 d-flex justify-content-center'>
+			<div className='col-12 col-md-4 d-flex justify-content-center '>
 				<Imagen imageUrl={Avatar} sty={varStyle.styleAvatar} />
 			</div>
-			<section className=' row col-12 d-flex justify-content-between mt-2'>
+			<section className=' row col-12 d-flex justify-content-between m-1'>
 				<p className='col-12 col-md-8 col-lg-8 col-sm-6 pl-0'>{institution}</p>
 				<Logros />
 			</section>

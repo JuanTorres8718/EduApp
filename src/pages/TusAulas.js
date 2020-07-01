@@ -53,7 +53,7 @@ const TusAulas = (props) => {
 				{Aulas.map((aula) => {
 					return (
 						<IndividualAula
-							key={aula.id}
+							keyI={aula.id}
 							name={aula.nombre_materia}
 							participants={aula.participantes}
 							grado={aula.grado}

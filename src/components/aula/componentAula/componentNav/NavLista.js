@@ -9,11 +9,17 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 
-const NavLista = () => {
+const NavLista = ({id}) => {
 	return (
 		<ul className='navbar-nav' id='lista-page-aula'>
 			<li className='nav-item'>
-				<Link to='/Actividades' className='drown-items'>
+				<Link 
+				to = 
+				{{
+					pathname: '/Actividades',
+					state: { id: id },
+				}}
+				 className='drown-items'>
 					<FontAwesomeIcon icon={faFileSignature} /> Asignacion de actividades
 				</Link>
 			</li>

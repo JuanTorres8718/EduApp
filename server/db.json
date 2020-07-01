@@ -26,6 +26,14 @@
       "participantes": 24,
       "usuario": 1,
       "id": 2
+    },
+    {
+      "nombre_materia": "Ingles",
+      "descripcion": "aprende un segundo idioma",
+      "grado": "quinto",
+      "participantes": 24,
+      "usuario": 1,
+      "id": 3
     }
   ],
   "actividades": [
@@ -35,6 +43,20 @@
       "fecha_limite": "04/07/2020",
       "descripcion": "mandar captura del ejercicio 1",
       "aula": 1
+    },
+    {
+      "nombre_actividad": "pintura",
+      "fecha_limite": "2020-07-03",
+      "descripcion": "pintar la pagina 20 del libro de entusiasmat",
+      "aula": 1,
+      "id": 2
+    },
+    {
+      "nombre_actividad": "video ",
+      "fecha_limite": "",
+      "descripcion": "enviar un vídeo diciendo los numero en ingles",
+      "aula": 1,
+      "id": 3
     }
   ]
 }

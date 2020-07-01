@@ -2,7 +2,7 @@
     margin-bottom: 20px;
     background-color: #d6d6d6;
     border-radius: 15px;
-    height: 26vh;
+    height: 24vh;
     display: flex;
     flex-direction: column;
     font-size: 25px;
@@ -14,7 +14,7 @@
     color: #fff;
     height: 6vh;
     width: 51%;
-    font-size: 12px;
+    font-size: 1rem;
     border: 0px;
     border-radius: 5px;
 }
@@ -31,4 +31,7 @@
     margin-bottom: 6px;
 }
 
+.text_title{
+    font-size: 2rem;
+}
 

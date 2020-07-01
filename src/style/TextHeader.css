@@ -1,4 +1,8 @@
-h3 {
+.title {
   color: #F95F62;  
-  font-size: 3rem;
+  font-size: 2.2rem;
+}
+
+.text_general{
+  font-size: 2rem;
 }

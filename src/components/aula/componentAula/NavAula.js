@@ -9,7 +9,7 @@ import {
 import ModalAyuda from './componentNav/ModalAyuda'
 import NavLista from './componentNav/NavLista'
 
-const NavAula = () => {
+const NavAula = ({id}) => {	
 	return (
 		<nav
 			className='navbar navbar-expand-lg navbar-light back-color'
@@ -58,7 +58,8 @@ const NavAula = () => {
 				className='collapse navbar-collapse justify-content-end'
 				id='navbarNav'
 			>
-				<NavLista />
+				<NavLista
+				id ={id} />
 			</div>
 		</nav>
 	)

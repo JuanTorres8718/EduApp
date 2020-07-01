@@ -4,8 +4,8 @@ import '../../style/FormularioAula.css'
 import axios from 'axios'
 
 const FormularioAula = (props) => {
-	const [Aula, setAula] = useState({
-		Nombre: '',
+		const [Aula, setAula] = useState({
+		email: '',
 		Descripcion: '',
 		Grado: '',
 		Participantes: 24,

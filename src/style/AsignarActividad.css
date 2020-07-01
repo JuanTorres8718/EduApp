@@ -2,6 +2,14 @@
     width: 22vh;
 }
 
+.text_title{
+    font-size: 2rem;
+}
+
+.text{
+    font-size: 1.1rem;
+}
+
 @media only screen and (min-width:990px){
     #cont-asignar{
         width: 70%;
