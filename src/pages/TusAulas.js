@@ -11,6 +11,7 @@ const TusAulas = (props) => {
 	var email = props.location.state.email
 
 	useEffect(() => {
+		let isMounted = true
 		axios.get('http://localhost:3004/usuario').then((res) => {
 			for (let i = 0; i < res.data.length; i++) {
 				if (email === res.data[i].email) {
@@ -26,12 +27,17 @@ const TusAulas = (props) => {
 							array.push(info[j])
 						}
 					}
-					setAulas(array)
+					if (isMounted) {
+						setAulas(array)
+					}
 				})
 			} else {
 				props.history.push('/Ingreso')
 			}
 		})
+		return () => {
+			isMounted = false
+		}
 	})
 
 	return (
@@ -53,10 +59,11 @@ const TusAulas = (props) => {
 				{Aulas.map((aula) => {
 					return (
 						<IndividualAula
-							keyI={aula.id}
+							key={aula.id}
 							name={aula.nombre_materia}
 							participants={aula.participantes}
 							grado={aula.grado}
+							identificador={aula.id}
 						/>
 					)
 				})}

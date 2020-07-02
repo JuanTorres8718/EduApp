@@ -1,18 +1,20 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 import NavAula from '../componentAula/NavAula'
-import {Link} from 'react-router-dom'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 import axios from 'axios'
 import '../../../style/AsignarActividad.css'
 
 const AsignarActividad = (props) => {
-	console.log(props)
-	const id = props.location.state.id
 	const [Actividad, setActividad] = useState({
 		Nombre: '',
 		Descripcion: '',
 		Fecha: '',
-		Adjuntar: '' ,
+		Adjuntar: '',
 	})
+
+	const [id] = useState(props.location.state.id)
 
 	const handleOnUpdateFiel = (value, field) => {
 		setActividad({
@@ -23,52 +25,61 @@ const AsignarActividad = (props) => {
 
 	const onsubmit = (e) => {
 		e.preventDefault()
-		let identificador = ''
-	
-				axios
-				.post('http://localhost:3004/Actividades', {
-		      nombre_actividad: Actividad.Nombre,
-					fecha_limite: Actividad.Fecha,
-					descripcion: Actividad.Descripcion,
-					aula: id,
+		axios
+			.post('http://localhost:3004/Actividades', {
+				nombre_actividad: Actividad.Nombre,
+				fecha_limite: Actividad.Fecha,
+				descripcion: Actividad.Descripcion,
+				aula: id,
+			})
+			.then((res) => {
+				setActividad({
+					Nombre: '',
+					Descripcion: '',
+					Fecha: '',
+					Adjuntar: '',
 				})
-				.then((res) => {
-					props.history.push('/Actividades', 
-					{ id: id })
-				})
-			console.log(Actividad)
+				props.history.push('/Actividades', { id: id })
+			})
 	}
 	return (
 		<div className='container-fluid text' id='cont-asignar'>
 			<div className='fixed-top'>
-				<NavAula />
-			</div>			
-			<div className='mt-5 pt-4 text-center'>		
+				<NavAula id={id} />
+			</div>
+			<div className='mt-5 pt-4 text-center'>
+				<Link
+					to={{
+						pathname: '/Actividades',
+						state: { id: id },
+					}}
+				>
+					<FontAwesomeIcon className='arrow-asignar' icon={faArrowLeft} />
+				</Link>
 				<h5 className='mb-4 Englebert text_title'>Crear nueva actividad</h5>
 			</div>
-			<form 
-			onSubmit={onsubmit}
-			// action='/Actividades'
-			 className='p-4'>
+			<form onSubmit={onsubmit} className='p-4'>
 				<div className='form-group'>
 					<label htmlFor='materia'>Nombre de la actividad*</label>
-					<input 
-					type='text'
-					className='input-form'
-					id='materia' 
-					onChange={(event) => {
-						handleOnUpdateFiel(event.target.value, 'Nombre')
-					}}/>
+					<input
+						type='text'
+						className='input-form'
+						id='materia'
+						onChange={(event) => {
+							handleOnUpdateFiel(event.target.value, 'Nombre')
+						}}
+					/>
 				</div>
 				<div className='form-group'>
 					<label htmlFor='descripcion'>Descripción de la actividad*</label>
 					<textarea
-					 className='input-form' 
-					 id='descripcion'
-					  rows='1'
+						className='input-form'
+						id='descripcion'
+						rows='1'
 						onChange={(event) => {
 							handleOnUpdateFiel(event.target.value, 'Descripcion')
-						}}></textarea>
+						}}
+					></textarea>
 				</div>
 				<div className='form-group'>
 					<label htmlFor='date'>Fecha limite de entrega*</label>
@@ -98,7 +109,6 @@ const AsignarActividad = (props) => {
 					</button>
 				</div>
 			</form>
-		
 		</div>
 	)
 }

@@ -27,6 +27,7 @@ class Ingresar extends Component {
 
 	login(e) {
 		const { email, password } = this.state
+		let cont = 1
 		e.preventDefault()
 		axios.get('http://localhost:3004/usuario').then((res) => {
 			let usuario = res.data
@@ -41,9 +42,11 @@ class Ingresar extends Component {
 							avatar: usuario[i].avatar,
 						},
 					])
-				} else {
-					alert('Datos incorrectos')
+					cont = 0
 				}
+			}
+			if (cont === 1) {
+				alert('Datos incorrectos')
 			}
 		})
 	}

@@ -1,15 +1,27 @@
 import React from 'react'
 import NavAula from './componentAula/NavAula'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 import '../../style/Ayuda.css'
 
-const Ayuda = () => {
+const Ayuda = (props) => {
+	const id = props.location.state.id
 	return (
 		<div className='container-fluid' id='cont-ayuda'>
 			<div className='fixed-top'>
-				<NavAula />
+				<NavAula id={id} />
 			</div>
 			<div className='cont-help'>
 				<div className='text-center'>
+					<Link
+						to={{
+							pathname: '/AulaMatematicas',
+							state: { keyI: id },
+						}}
+					>
+						<FontAwesomeIcon className='arrow-asignar' icon={faArrowLeft} />
+					</Link>
 					<h3 className='title-ayuda'>Explorador de Ayuda</h3>
 				</div>
 				<div className='text-cont'>

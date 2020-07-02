@@ -10,32 +10,44 @@ import { Link } from 'react-router-dom'
 import ModalAyuda from './componentNav/ModalAyuda'
 import NavLista from './componentNav/NavLista'
 
-const NavAula = ({id}) => {	
+const NavAula = ({ id }) => {
 	return (
 		<nav
 			className='navbar navbar-expand-lg navbar-light back-color'
 			id='navbar-page-aula'
 		>
-			<a
+			<Link
+				to={{
+					pathname: '/AulaMatematicas',
+					state: { keyI: id },
+				}}
 				className='navbar-brand icon-text text-light'
-				href='/AulaMatematicas'
-				id='home-page-aula'
+				id='icono-inicio'
 			>
 				<FontAwesomeIcon className='size-icon-aula' icon={faUser} />
 				<p className='esconder'>Inicio</p>
-			</a>
+			</Link>
 			<div
 				className='content-buttons d-flex justify-content-between'
 				id='noti-page-aula'
 			>
-				<a
+				<Link
+					to={{
+						pathname: '/AulaMatematicas',
+						state: { keyI: id },
+					}}
 					className='navbar-brand icon-text text-light'
-					href='/AulaMatematicas'
 				>
 					<FontAwesomeIcon className='size-icon-aula' icon={faBell} />
 					<p className='esconder'>Notificaciones</p>
-				</a>
-				<Link to='/Ayuda' className='navbar-brand icon-text text-light'>
+				</Link>
+				<Link
+					to={{
+						pathname: '/Ayuda',
+						state: { id: id },
+					}}
+					className='navbar-brand icon-text text-light'
+				>
 					<FontAwesomeIcon className='size-icon-aula' icon={faQuestion} />
 					<p className='esconder'>Ayuda</p>
 				</Link>
@@ -57,8 +69,7 @@ const NavAula = ({id}) => {
 				className='collapse navbar-collapse justify-content-end'
 				id='navbarNav'
 			>
-				<NavLista
-				id ={id} />
+				<NavLista id={id} />
 			</div>
 		</nav>
 	)

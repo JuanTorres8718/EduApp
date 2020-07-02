@@ -5,14 +5,20 @@ import { Link } from 'react-router-dom'
 import NavAula from '../componentAula/NavAula'
 import '../../../style/VerActividad.css'
 
-const VerActividad = () => {
+const VerActividad = (props) => {
+	const id = props.location.state.id
 	return (
 		<div className='container-fluid' id='cont-ver-actividad'>
-			<Link to='/Actividades'>
+			<Link
+				to={{
+					pathname: '/Actividades',
+					state: { id: id },
+				}}
+			>
 				<FontAwesomeIcon className='back-activity' icon={faArrowLeft} />
 			</Link>
 			<div className='fixed-top'>
-				<NavAula />
+				<NavAula id={id} />
 			</div>
 			<div className='mt-5 pt-4 text-center'>
 				<h5 className='mb-4'>Actividad 1</h5>

@@ -10,6 +10,15 @@
     font-size: 1.1rem;
 }
 
+.arrow-asignar{
+    position: absolute;
+    transform: scale(2);
+    left: 26px;
+    top: 81px;
+    color: gray;
+}
+
+
 @media only screen and (min-width:990px){
     #cont-asignar{
         width: 70%;
@@ -19,5 +28,9 @@
     #btn-create-activity {
         width: 31vh;
         font-size: 25px;
+    }
+
+    .arrow-asignar{
+        left: 32%;
     }
 }

@@ -186,6 +186,10 @@
         margin-left: 27%;
         margin-top: -5%;
     }
+
+    #icono-inicio{
+        width: 93%;
+    }
 }
 
 @media only screen and (min-width:1200px){
