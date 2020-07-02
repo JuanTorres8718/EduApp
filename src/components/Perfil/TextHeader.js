@@ -6,7 +6,7 @@ const TextHeader = ({ welcome, name, profesion, institution }) => {
 		<section className='col-12 col-md-8'>
 			<h3 className='Englebert title'>{welcome}</h3>
 			<p className='text_general'>{name}</p>
-			<p  className='text_general'>{profesion}</p>
+			<p className='text_general'>{profesion}</p>
 		</section>
 	)
 }

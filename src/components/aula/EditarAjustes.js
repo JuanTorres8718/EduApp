@@ -2,7 +2,6 @@ import React from 'react'
 
 const EditarAjustes = ({ name, valueInput }) => {
 	return (
-	
 		<div className='modal-ajuste fondo_registro'>
 			<div className='modal-content'>
 				<div className='modal-header'>

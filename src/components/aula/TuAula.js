@@ -1,4 +1,4 @@
-import React,{ useState } from 'react'
+import React, { useState } from 'react'
 import NavAula from '../aula/componentAula/NavAula'
 import BotonPublicar from './componentAula/BotonPublicar'
 import CardPublicacion from './componentAula/CardPublicacion'
