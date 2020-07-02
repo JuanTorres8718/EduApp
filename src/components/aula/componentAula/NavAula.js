@@ -6,40 +6,51 @@ import {
 	faQuestion,
 	faBell,
 } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom'
 import ModalAyuda from './componentNav/ModalAyuda'
 import NavLista from './componentNav/NavLista'
 
-const NavAula = () => {
+const NavAula = ({ id }) => {
 	return (
 		<nav
 			className='navbar navbar-expand-lg navbar-light back-color'
 			id='navbar-page-aula'
 		>
-			<a
-				className='navbar-brand icon-text'
-				href='/AulaMatematicas'
-				id='home-page-aula'
+			<Link
+				to={{
+					pathname: '/AulaMatematicas',
+					state: { keyI: id },
+				}}
+				className='navbar-brand icon-text text-light'
+				id='icono-inicio'
 			>
 				<FontAwesomeIcon className='size-icon-aula' icon={faUser} />
 				<p className='esconder'>Inicio</p>
-			</a>
+			</Link>
 			<div
 				className='content-buttons d-flex justify-content-between'
 				id='noti-page-aula'
 			>
-				<a className='navbar-brand icon-text' href='/'>
+				<Link
+					to={{
+						pathname: '/AulaMatematicas',
+						state: { keyI: id },
+					}}
+					className='navbar-brand icon-text text-light'
+				>
 					<FontAwesomeIcon className='size-icon-aula' icon={faBell} />
 					<p className='esconder'>Notificaciones</p>
-				</a>
-				<a
-					className='navbar-brand icon-text'
-					data-toggle='modal'
-					data-target='#modalQuestion'
-					href='/'
+				</Link>
+				<Link
+					to={{
+						pathname: '/Ayuda',
+						state: { id: id },
+					}}
+					className='navbar-brand icon-text text-light'
 				>
 					<FontAwesomeIcon className='size-icon-aula' icon={faQuestion} />
 					<p className='esconder'>Ayuda</p>
-				</a>
+				</Link>
 				<ModalAyuda />
 				<button
 					className='navbar-toggler'
@@ -58,7 +69,7 @@ const NavAula = () => {
 				className='collapse navbar-collapse justify-content-end'
 				id='navbarNav'
 			>
-				<NavLista />
+				<NavLista id={id} />
 			</div>
 		</nav>
 	)

@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import IndividualAula from '../components/TusAulas/IndividualAula'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom'
 import axios from 'axios'
 import '../style/TusAulas.css'
@@ -7,14 +9,24 @@ import '../style/AgregarAula.css'
 
 const TusAulas = (props) => {
 	const [Aulas, setAulas] = useState([])
+	const [perfil, setPerfil] = useState({
+		email: '',
+		nombre: '',
+		institucion: '',
+		profesion: '',
+		avatar: '',
+	})
 
 	var email = props.location.state.email
 
 	useEffect(() => {
+		let isMounted = true
+		let arrayp = []
 		axios.get('http://localhost:3004/usuario').then((res) => {
 			for (let i = 0; i < res.data.length; i++) {
 				if (email === res.data[i].email) {
 					var id = res.data[i].id
+					arrayp.push(res.data[i])
 				}
 			}
 			if (id !== undefined) {
@@ -26,17 +38,31 @@ const TusAulas = (props) => {
 							array.push(info[j])
 						}
 					}
-					setAulas(array)
+					if (isMounted) {
+						setAulas(array)
+						setPerfil(arrayp)
+					}
 				})
 			} else {
 				props.history.push('/Ingreso')
 			}
 		})
+		return () => {
+			isMounted = false
+		}
 	})
 
 	return (
 		<div>
 			<div className='d-flex justify-content-around m-5'>
+				<Link
+					to={{
+						pathname: '/perfil',
+						state: perfil,
+					}}
+				>
+					<FontAwesomeIcon className='arrow-tus-aulas' icon={faArrowLeft} />
+				</Link>
 				<h1 className='text-center Englebert'>Tus Aulas</h1>
 				<Link
 					to={{
@@ -57,6 +83,7 @@ const TusAulas = (props) => {
 							name={aula.nombre_materia}
 							participants={aula.participantes}
 							grado={aula.grado}
+							identificador={aula.id}
 						/>
 					)
 				})}

@@ -1,14 +1,21 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const GridActividad = () => {
+const GridActividad = ({ number, fecha, identificador }) => {
 	return (
-		<div className='grid-actividad text-center'>
-			<p className='title-grid'>Actividad 1</p>
-			<small>Fecha Limite: 05/08/2020</small>
-			<Link to='/Actividades/VerActividad'>
-				<button className='btn-actividad'>Ver mas</button>
-			</Link>
+		<div className='col-12 col-sm-6 col-lg-4'>
+			<div className='grid-actividad text-center'>
+				<p className='title-grid Englebert'>Actividad {number}</p>
+				<small>Fecha Limite: {fecha}</small>
+				<Link
+					to={{
+						pathname: '/Actividades/VerActividad',
+						state: { id: identificador },
+					}}
+				>
+					<button className='btn-actividad'>Ver mas</button>
+				</Link>
+			</div>
 		</div>
 	)
 }

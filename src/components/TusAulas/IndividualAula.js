@@ -3,13 +3,13 @@ import { Link } from 'react-router-dom'
 import '../../style/IndividualAulas.css'
 // import ImagenAulas from './ImagenAulas'
 
-const IndividualAula = ({ participants, name, url, grado }) => {
-	// const [varStyle] = useState({
-	// 	styleCircle: 'circle',
-	// })
+const IndividualAula = ({ participants, name, url, grado, identificador }) => {
 	return (
 		<Link
-			to={`/AulaMatematicas`}
+			to={{
+				pathname: `/AulaMatematicas`,
+				state: { keyI: identificador },
+			}}
 			className={` col-3  gridAula p-4 m-3 d-flex align-items-center flex-column justify-content-center col-7 col-lg-3 col-md-3 text-dark col-xl-2 `}
 			id='IndividualRoom'
 		>

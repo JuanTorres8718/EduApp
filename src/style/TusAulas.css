@@ -16,3 +16,18 @@
 #IndividualRoom {
   height: 230px;
 }
+
+.arrow-tus-aulas{
+  position: absolute;
+  transform: scale(3);
+  left: 43px;
+  top: 65px;
+  color: gray;
+}
+
+
+@media only screen and (min-width:990px){
+  .arrow-tus-aulas{
+    left: 130px;
+  }
+}

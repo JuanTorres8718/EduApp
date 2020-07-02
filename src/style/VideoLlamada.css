@@ -1,0 +1,49 @@
+#cont-videollamada{
+    margin-top: 80px;
+}
+
+.icons-call{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+}
+
+.icon-size{
+    transform: scale(2);
+    margin-right: 10px;
+}
+
+.jamboard{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.icon-film{
+    margin-left: 15px;
+}
+
+.icons-call{   
+    position: absolute;
+    left: 40%;
+    bottom: 85px;
+}
+
+.icon-margin{
+    margin-left: 15px;
+}
+
+
+@media only screen and (min-width:990px){
+    #cont-videollamada{
+        width: 70%;
+        margin-left: 27%;
+        margin-top: 3%;
+    }
+
+    .icons-call{   
+        position: absolute;
+        left: 44%;
+        bottom: 80px;
+        width: 15%;
+    }
+}

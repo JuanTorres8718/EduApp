@@ -5,7 +5,7 @@ import axios from 'axios'
 
 const FormularioAula = (props) => {
 	const [Aula, setAula] = useState({
-		Nombre: '',
+		email: '',
 		Descripcion: '',
 		Grado: '',
 		Participantes: 24,

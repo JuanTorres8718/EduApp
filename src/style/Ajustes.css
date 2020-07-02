@@ -1,8 +1,17 @@
+.fontsize{   
+    font-size: 1rem;
+}
+
+#fontsizeTitle{   
+    font-size: 2rem;
+}
+
 .input-form{
     width: 100%;
     border: 0px solid;
     border-bottom: 1px solid gray;
     border-radius: 0px;
+    background-color: #78cc7800;
 }
 
 .input-form:focus{
@@ -29,7 +38,7 @@
 .back-arrow{
     position: absolute;
     transform: scale(2);
-    left: 28px;
+    left: 40px;
     top: 45px;
     color: gray;
 }
@@ -41,3 +50,25 @@
     pointer-events: none;
     margin-top: 35%;
 }
+
+.fondo_ajustes{
+    background-color: #80dc9425;
+
+}
+
+.fondo_formularioAustes{
+    background-color: #78cc783b;
+    box-shadow: 3px 3px 3px #5f9a50bd;
+    width: 90%;
+}
+
+@media only screen and (min-width: 700px){
+    .icon-edit{   
+        position: absolute;
+        right: 100px;
+        border: 0px;
+    }
+    .back-arrow{
+        left: 80px;
+    }
+} 
