@@ -1,0 +1,9 @@
+.circulo{
+  border-radius: 50%;
+  height: 90px;
+}
+
+.mensaje {
+  width: 90%;
+  background-color:#f4f4f4 ;
+}

@@ -37,19 +37,34 @@ const VerActividad = (props) => {
 				<ul className='list-group list-group-flush'>
 					<li className='list-group-item d-flex justify-content-between'>
 						Pepe Mujica
-						<Link to='/Actividades/VerActividad/Calificaciones'>
+						<Link
+							to={{
+								pathname: '/Actividades/VerActividad/Calificaciones',
+								state: { id: id },
+							}}
+						>
 							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
 						</Link>
 					</li>
 					<li className='list-group-item d-flex justify-content-between'>
 						Elon Musk
-						<Link to='/Actividades/VerActividad/Calificaciones'>
+						<Link
+							to={{
+								pathname: '/Actividades/VerActividad/Calificaciones',
+								state: { id: id },
+							}}
+						>
 							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
 						</Link>
 					</li>
 					<li className='list-group-item d-flex justify-content-between'>
 						France Urrutia
-						<Link to='/Actividades/VerActividad/Calificaciones'>
+						<Link
+							to={{
+								pathname: '/Actividades/VerActividad/Calificaciones',
+								state: { id: id },
+							}}
+						>
 							<FontAwesomeIcon className='plus' icon={faPlusCircle} />
 						</Link>
 					</li>

@@ -15,6 +15,7 @@ import AsignarActividad from '../aula/componenteActividad/AsignarActividad'
 import VerActividad from '../aula/componenteActividad/VerActividad'
 import Ayuda from '../aula/Ayuda'
 import VideoLlamada from '../aula/VideoLlamada'
+import Chat from '../aula/Chat/Chat'
 
 const Ruta = () => (
 	<BrowserRouter>
@@ -42,6 +43,7 @@ const Ruta = () => (
 			/>
 			<Route exact path='/Actividades' component={Actividades} />
 			<Route exact path='/Actividades/VerActividad' component={VerActividad} />
+			<Route exact path='/TuAula/Chat' component={Chat} />
 		</Switch>
 	</BrowserRouter>
 )
