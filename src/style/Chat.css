@@ -2,8 +2,7 @@
   border: 0px;
   font-size: 1rem;
   background-color: #77D353;
-  border-radius: 20px;
- 
+  border-radius: 20px; 
   color: white;
 }
 
@@ -11,5 +10,10 @@
   #chat{
       width: 70%;
       margin-left: 27%; 
+  }
+
+  #boton{
+    width: 75%;
+    margin-left: 25%; 
   }
 }
