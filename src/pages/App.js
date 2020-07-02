@@ -46,7 +46,7 @@ const App = () => {
 					<p className='text-light'>
 						{' '}
 						© 2020 Copyright:
-						<a href='https://mdbootstrap.com/'> MDBootstrap.com</a>
+						<a href='/'> Juan Torres, Heidy Florez, Erika Otalvaro</a>
 					</p>
 				</div>
 			</footer>
