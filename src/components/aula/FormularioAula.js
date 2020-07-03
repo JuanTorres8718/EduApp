@@ -23,14 +23,14 @@ const FormularioAula = (props) => {
 	const onsubmit = (e) => {
 		e.preventDefault()
 		let identificador = ''
-		axios.get('http://localhost:3004/usuario').then((res) => {
+		axios.get('https://api-fake-eduapp.herokuapp.com/usuario').then((res) => {
 			for (let i = 0; i < res.data.length; i++) {
 				if (email === res.data[i].email) {
 					identificador = res.data[i].id
 				}
 			}
 			axios
-				.post('http://localhost:3004/aulas', {
+				.post('https://api-fake-eduapp.herokuapp.com/aulas', {
 					nombre_materia: Aula.Nombre,
 					descripcion: Aula.Descripcion,
 					grado: Aula.Grado,

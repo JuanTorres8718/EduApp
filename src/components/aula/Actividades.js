@@ -13,17 +13,19 @@ const Actividades = (props) => {
 		let isMounted = true
 		if (id !== undefined) {
 			if (isMounted) {
-				axios.get('http://localhost:3004/actividades').then((res) => {
-					const info = res.data
-					let array = []
-					for (let i = 0; i < info.length; i++) {
-						if (id === info[i].aula) {
-							array.push(info[i])
+				axios
+					.get('https://api-fake-eduapp.herokuapp.com/actividades')
+					.then((res) => {
+						const info = res.data
+						let array = []
+						for (let i = 0; i < info.length; i++) {
+							if (id === info[i].aula) {
+								array.push(info[i])
+							}
 						}
-					}
 
-					setActividades(array)
-				})
+						setActividades(array)
+					})
 			}
 		} else {
 			props.history.push('/Ingreso')

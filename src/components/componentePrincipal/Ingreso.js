@@ -29,7 +29,7 @@ class Ingresar extends Component {
 		const { email, password } = this.state
 		let cont = 1
 		e.preventDefault()
-		axios.get('http://localhost:3004/usuario').then((res) => {
+		axios.get('https://api-fake-eduapp.herokuapp.com/usuario').then((res) => {
 			let usuario = res.data
 			for (let i = 0; i < usuario.length; i++) {
 				if (email === usuario[i].email && password === usuario[i].password) {

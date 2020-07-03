@@ -22,7 +22,7 @@ const TusAulas = (props) => {
 	useEffect(() => {
 		let isMounted = true
 		let arrayp = []
-		axios.get('http://localhost:3004/usuario').then((res) => {
+		axios.get('https://api-fake-eduapp.herokuapp.com/usuario').then((res) => {
 			for (let i = 0; i < res.data.length; i++) {
 				if (email === res.data[i].email) {
 					var id = res.data[i].id
@@ -30,7 +30,7 @@ const TusAulas = (props) => {
 				}
 			}
 			if (id !== undefined) {
-				axios.get('http://localhost:3004/aulas').then((res) => {
+				axios.get('https://api-fake-eduapp.herokuapp.com/aulas').then((res) => {
 					const info = res.data
 					let array = []
 					for (let j = 0; j < info.length; j++) {
