@@ -65,7 +65,7 @@ class Registro extends Component {
 		return (
 			<div className='fondo_registro'>
 				<Header></Header>
-				<div className='container d-flex justify-content-center'>
+				<div className='d-flex justify-content-center align-items-center vh-100'>
 					<form
 						className='row justify-content-center margen_header col-lg-4 col-md-6 col-sm-12 fondo_formulario'
 						onSubmit={this.handleCreate}

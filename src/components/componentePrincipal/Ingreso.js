@@ -55,7 +55,7 @@ class Ingresar extends Component {
 		return (
 			<div className='vh-100 fondo_registro'>
 				<Header></Header>
-				<div className='container d-flex justify-content-center'>
+				<div className='d-flex justify-content-center'>
 					<form
 						onSubmit={this.login}
 						className='row justify-content-center margen_header col-lg-4 col-md-6 col-sm-12 fondo_formulario'
