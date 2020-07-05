@@ -53,17 +53,17 @@ class Ingresar extends Component {
 
 	render() {
 		return (
-			<div className='vh-100 fondo_registro'>
+			<div className='fondo_registro'>
 				<Header></Header>
-				<div className='d-flex justify-content-center'>
+				<div className=' d-flex justify-content-center align-items-center vh-100'>
 					<form
 						onSubmit={this.login}
-						className='row justify-content-center margen_header col-lg-4 col-md-6 col-sm-12 fondo_formulario'
+						className='row justify-content-center col-lg-5 col-md-6 col-sm-12 fondo_formulario col-10'
 					>
-						<h2 className='titlefont mb-3 mt-3 text-center'>
-							Ingresa a tu cuenta
+						<h2 className=' mb-5 mt-3 text-center'>
+							Ingresa a tu cuenta EduApp
 						</h2>
-						<div className='form-group col-sm-12'>
+						<div className='form-group col-sm-12 mb-5'>
 							<label htmlFor='email' className='ingresofont'>
 								Correo electrónico
 							</label>
@@ -75,7 +75,7 @@ class Ingresar extends Component {
 								aria-describedby='emailHelp'
 							/>
 						</div>
-						<div className='form-group col-sm-12'>
+						<div className='form-group col-sm-12 mb-5'>
 							<label htmlFor='password' className='ingresofont'>
 								Contraseña
 							</label>
@@ -88,15 +88,19 @@ class Ingresar extends Component {
 						</div>
 						<button
 							type='submit'
-							className='btn fondo_btn mt-2 form-control ingresofont rounded mb-2'
+							className='btn fondo_btn mt-2 form-control ingresofont rounded mb-2 text-light'
 						>
 							Ingresar
 						</button>
-						<div className='text-center mt-2 col-12'>
-							<Link to='/Registro'>¿No tienes una cuenta? Registrate aquí</Link>
+						<div className='text-center mt-2 col-12 '>
+							<Link to='/Registro' className='text-dark'>
+								¿No tienes una cuenta? Registrate aquí
+							</Link>
 						</div>
 						<div className='text-center mt-2 mb-2 col-12'>
-							<Link to='/'>¿Olvidaste tu contraseña?</Link>
+							<Link to='/' className='text-dark'>
+								¿Olvidaste tu contraseña?
+							</Link>
 						</div>
 					</form>
 				</div>

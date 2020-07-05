@@ -6,9 +6,6 @@
 .titlefont{
     font-family: 'Englebert', sans-serif;
 }
-.margen_header{
-    margin-top: 70px;
-}
 #toggle_nav{
     border-radius: 50%;
     border: 2px solid white;
@@ -29,9 +26,10 @@
     background-color: #80dc9425;
 }
 .fondo_formulario{
-    background-color: #78cc783b;
-    box-shadow: 3px 3px 3px #5f9a50bd;
+    /* background-color: #78cc783b; */
+    box-shadow: 3px 3px 3px 3px #5f9a50bd;
 }
+
 .img_principal{
     border-radius: 40px;
 }
@@ -48,6 +46,11 @@
     display: flex;
     justify-content: space-between;
 }
+
+.margin-home{
+    margin-top: 70px;
+}
+
 @media only screen and (min-width: 500px){
     .footer_list{
         width: 35%;

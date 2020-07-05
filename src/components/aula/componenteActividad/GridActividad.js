@@ -1,11 +1,11 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const GridActividad = ({ number, fecha, identificador }) => {
+const GridActividad = ({ fecha, identificador, nombre }) => {
 	return (
 		<div className='col-12 col-sm-6 col-lg-4'>
 			<div className='grid-actividad text-center'>
-				<p className='title-grid Englebert'>Actividad {number}</p>
+				<p className='title-grid Englebert'>{nombre}</p>
 				<small>Fecha Limite: {fecha}</small>
 				<Link
 					to={{
