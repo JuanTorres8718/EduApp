@@ -37,7 +37,7 @@ class Registro extends Component {
 		e.preventDefault()
 		if (contraseña === confirmar) {
 			axios
-				.post('http://localhost:3004/usuario', {
+				.post('https://api-fake-eduapp.herokuapp.com/usuario', {
 					nombre: `${nombres} ${apellidos}`,
 					institucion: institucion,
 					email: correo,
@@ -65,24 +65,20 @@ class Registro extends Component {
 		return (
 			<div className='fondo_registro'>
 				<Header></Header>
-				<div className='container d-flex justify-content-center'>
+				<div className='d-flex justify-content-center align-items-center vh-100'>
 					<form
-						className='row justify-content-center margen_header col-lg-4 col-md-6 col-sm-12 fondo_formulario'
+						className='row justify-content-center margen_header col-lg-5 col-md-6 col-sm-12 fondo_formulario col-10'
 						onSubmit={this.handleCreate}
-						novalidate
 					>
-						<h2 className='text-center mb-3 mt-3 titlefont'>
-							Crea una cuenta y diviertete aprendiendo
+						<h2 className='text-center mb-3 mt-3 col-12'>
+							Registrate
 						</h2>
-						<div className='form-row'>
-							<div className='col-md-6'>
-								<label htmlFor='nombre' className='ingresofont'>
-									Nombres
-								</label>
+							<div className='col-md-6 col-6 mt-3'>
 								<input
 									type='text'
 									className='input-form fondo_input'
 									id='nombre'
+									placeholder='Nombre'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'nombres')
 									}}
@@ -90,14 +86,12 @@ class Registro extends Component {
 								/>
 								<div className='valid-tooltip'>Looks good!</div>
 							</div>
-							<div className='col-md-6'>
-								<label htmlFor='apellidos' className='ingresofont'>
-									Apellidos
-								</label>
+							<div className='col-6 col-md-6 mt-3'>
 								<input
 									type='text'
 									className='input-form fondo_input'
 									id='apellidos'
+									placeholder='Apellido'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'apellidos')
 									}}
@@ -105,16 +99,12 @@ class Registro extends Component {
 								/>
 								<div className='valid-tooltip'>Looks good!</div>
 							</div>
-						</div>
-						<div className='form-row'>
-							<div className='col-md-6'>
-								<label htmlFor='institucion' className='ingresofont'>
-									Institución
-								</label>
+							<div className='col-12 mt-3'>
 								<input
 									type='text'
 									className='input-form fondo_input'
 									id='institucion'
+									placeholder='Institución'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'institucion')
 									}}
@@ -124,14 +114,12 @@ class Registro extends Component {
 									Ingresa el nombre de una institución válida
 								</div>
 							</div>
-							<div className='col-md-6'>
-								<label htmlFor='correo' className='ingresofont'>
-									Correo
-								</label>
+							<div className='col-12 mt-3'>
 								<input
 									type='email'
 									className='input-form fondo_input'
 									id='correo'
+									placeholder='Correo Electrónico'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'correo')
 									}}
@@ -139,63 +127,55 @@ class Registro extends Component {
 								/>
 								<div className='invalid-tooltip'>Ingresa un correo válido</div>
 							</div>
-							<div className='col-md-12'>
-								<label htmlFor='clave1' className='ingresofont'>
-									Elije una contraseña
-								</label>
+							<div className='col-md-12 mt-3'>
 								<input
 									type='password'
 									className='input-form fondo_input'
 									id='clave1'
+									placeholder='Elije una contraseña'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'contraseña')
 									}}
 									required
 								/>
 							</div>
-							<div className='col-md-12'>
-								<label htmlFor='clave2' className='ingresofont'>
-									Confirma tu contraseña
-								</label>
+							<div className='col-md-12 mt-3'>
 								<input
 									type='password'
 									className='input-form fondo_input'
 									id='clave2'
+									placeholder='Confirma tu contraseña'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'confirmar')
 									}}
 									required
 								/>
 							</div>
-							<div className='col-md-12'>
-								<label htmlFor='numero' className='ingresofont'>
-									Número de celular
-								</label>
+							<div className='col-md-12 mt-3'>
 								<input
 									type='number'
 									className='input-form fondo_input'
 									id='numero'
+									placeholder='Número de celular'
 									onChange={(e) => {
 										this.handleValueRegister(e.target.value, 'numero')
 									}}
 									required
 								/>
 							</div>
-							<div className='col-md-12 mt-2'>
-								<label className='ingresofont'>
-									<input type='radio' name='ingreso' checked />
+							<div className='col-md-12 mt-3 '>
+								<label className='ingresofont col-12'>
+									<input type='radio' name='ingreso' disabled />
 									Ingresar como estudiante
 								</label>
-								<label className='ingresofont'>
-									<input type='radio' name='ingreso' checked />
+								<label className='ingresofont col-12'>
+									<input type='radio' name='ingreso' defaultChecked  />
 									Ingresar como docente
 								</label>
 							</div>
-						</div>
 						<button
-							className='btn fondo_btn mt-2 form-control ingresofont rounded mb-2'
-							type='submit'
-						>
+							className='btn fondo_btn mt-2 form-control ingresofont rounded mb-2 text-light'
+							type='submit'	>
 							Adelante
 						</button>
 					</form>

@@ -13,9 +13,17 @@
 
 .button-aula{
   border-radius: 20px;
-  width: 16vh;
+  width: 16vw;
   background: #77D353;
-  color: bisque;   
+  color: white;   
   margin-top: 20px;
   border: 0px;
+  font-size: 1.4rem;
+}
+
+.aula {
+  background-color: #f4f4f4;
+  margin: 15px;
+  border-radius: 5%;
+  height: 95vh;
 }

@@ -53,9 +53,9 @@ const Actividades = (props) => {
 			<div className='row mt-5'>
 				{Actividades.map((actividad) => {
 					return (
-						<GridActividad
+						<GridActividad						
 							key={actividad.id}
-							number={actividad.id}
+							nombre={actividad.nombre_actividad}
 							fecha={actividad.fecha_limite}
 							descripcion={actividad.descripcion}
 							identificador={id}
