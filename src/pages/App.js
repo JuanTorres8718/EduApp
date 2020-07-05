@@ -12,7 +12,7 @@ import '../style/Circle.css'
 
 const App = () => {
 	return (
-		<section>
+		<section className='margin-home'>
 			<Header></Header>
 			<Principal></Principal>
 			<footer className='pt-4 bg-dark'>

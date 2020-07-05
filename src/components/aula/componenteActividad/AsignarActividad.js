@@ -26,7 +26,7 @@ const AsignarActividad = (props) => {
 	const onsubmit = (e) => {
 		e.preventDefault()
 		axios
-			.post('http://localhost:3004/Actividades', {
+			.post('https://api-fake-eduapp.herokuapp.com/actividades', {
 				nombre_actividad: Actividad.Nombre,
 				fecha_limite: Actividad.Fecha,
 				descripcion: Actividad.Descripcion,

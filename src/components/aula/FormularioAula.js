@@ -23,14 +23,14 @@ const FormularioAula = (props) => {
 	const onsubmit = (e) => {
 		e.preventDefault()
 		let identificador = ''
-		axios.get('http://localhost:3004/usuario').then((res) => {
+		axios.get('https://api-fake-eduapp.herokuapp.com/usuario').then((res) => {
 			for (let i = 0; i < res.data.length; i++) {
 				if (email === res.data[i].email) {
 					identificador = res.data[i].id
 				}
 			}
 			axios
-				.post('http://localhost:3004/aulas', {
+				.post('https://api-fake-eduapp.herokuapp.com/aulas', {
 					nombre_materia: Aula.Nombre,
 					descripcion: Aula.Descripcion,
 					grado: Aula.Grado,
@@ -44,9 +44,9 @@ const FormularioAula = (props) => {
 	}
 
 	return (
-		<div className='container-form pt-4'>
-			<div className='form-grop text-center pt-5 pb-4'>
-				<h4>Crea tu aula</h4>
+		<div className='container-form pt-4 aula'>
+			<div className='form-grop text-center pt-5 pb-4 Englebert'>
+				<h2>Crea tu aula</h2>
 			</div>
 			<form
 				onSubmit={onsubmit}
@@ -87,7 +87,7 @@ const FormularioAula = (props) => {
 					/>
 				</div>
 				<div className='text-center'>
-					<button type='submit' className='button-aula'>
+					<button type='submit' className='button-aula w-25 text-light'>
 						Crear
 					</button>
 				</div>
