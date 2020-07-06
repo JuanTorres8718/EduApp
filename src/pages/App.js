@@ -18,7 +18,7 @@ const App = () => {
 			<footer className='pt-4 bg-dark'>
 				<div className='text-center py-3'>
 					<ul className='list-unstyled footer_list mb-3'>
-						<li className='list-inline-item'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
 									className='icon_footer text-light'
@@ -26,7 +26,7 @@ const App = () => {
 								></FontAwesomeIcon>
 							</a>
 						</li>
-						<li className='list-inline-item'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
 									className='icon_footer text-light'
@@ -34,7 +34,7 @@ const App = () => {
 								></FontAwesomeIcon>
 							</a>
 						</li>
-						<li className='list-inline-item'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
 									className='icon_footer text-light'
@@ -47,6 +47,11 @@ const App = () => {
 						{' '}
 						© 2020 Copyright:
 						<a href='/' className='text-light'> Juan Torres, Heidy Florez, Erika Otalvaro</a>
+						<a href='/'> Juan Torres, Heidy Florez, Erika Otalvaro</a>
+						<a href='https://mdbootstrap.com/' className='text-light'>
+							{' '}
+							MDBootstrap.com
+						</a>
 					</p>
 				</div>
 			</footer>
