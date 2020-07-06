@@ -10,8 +10,7 @@ const Chat = (props) => {
 	const id = props.location.state.id
 	return (
 		<div className=''>
-			<Nav className='col-lg-4' 
-			id={id}></Nav>
+			<Nav className='col-lg-4' id={id}></Nav>
 			<div id='chat'>
 				<Mensajes mensaje='me ayudan con el ejercicio 5'></Mensajes>
 				<Mensajes mensaje='¿hoy hay clase?' />

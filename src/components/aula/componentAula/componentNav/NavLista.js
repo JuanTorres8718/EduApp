@@ -63,20 +63,16 @@ const NavLista = ({ id }) => {
 				</Link>
 			</li>
 			<li className='nav-item'>
-				<Link 
-				to={{
-					pathname: '/TuAula/Chat',
-					state: { id: identificador },
-				}}
-				className='drown-items text-light'>
+				<Link
+					to={{
+						pathname: '/TuAula/Chat',
+						state: { id: identificador },
+					}}
+					className='drown-items text-light'
+				>
 					<FontAwesomeIcon icon={faCommentDots} /> Chat Group
 				</Link>
 			</li>
-			{/* <li className='nav-item'>
-				<Link to='/AulaMatematicas' className='drown-items text-light'>
-					<FontAwesomeIcon icon={faCalendarAlt} /> Calendario
-				</Link>
-			</li> */}
 			<li className='nav-item'>
 				<Link
 					to={{
