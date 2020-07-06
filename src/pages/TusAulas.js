@@ -54,14 +54,14 @@ const TusAulas = (props) => {
 
 	return (
 		<div className='tusaulas'>
-			<div className='d-flex justify-content-around m-5 '>
+			<div className='d-flex justify-content-around m-5 p-3 '>
 				<Link
 					to={{
 						pathname: '/perfil',
 						state: perfil,
 					}}
 				>
-					<FontAwesomeIcon className='arrow-tus-aulas' icon={faArrowLeft} />
+					<FontAwesomeIcon className='arrow-tus-aulas m-3' icon={faArrowLeft} />
 				</Link>
 				<h1 className='text-center Englebert'>Tus Aulas</h1>
 				<Link
