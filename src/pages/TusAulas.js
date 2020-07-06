@@ -54,7 +54,7 @@ const TusAulas = (props) => {
 
 	return (
 		<div className='tusaulas'>
-			<div className='d-flex justify-content-around m-5 p-3 '>
+			<div className='d-flex justify-content-around mt-5 mb-5 ml-5 p-3 '>
 				<Link
 					to={{
 						pathname: '/perfil',
