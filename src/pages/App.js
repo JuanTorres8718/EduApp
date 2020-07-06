@@ -18,26 +18,26 @@ const App = () => {
 			<footer className='pt-4 bg-dark'>
 				<div className='text-center py-3'>
 					<ul className='list-unstyled footer_list mb-3'>
-						<li className='list-inline-item text-light'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
-									className='icon_footer'
+									className='icon_footer text-light'
 									icon={faFacebookF}
 								></FontAwesomeIcon>
 							</a>
 						</li>
-						<li className='list-inline-item text-light'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
-									className='icon_footer'
+									className='icon_footer text-light'
 									icon={faLinkedinIn}
 								></FontAwesomeIcon>
 							</a>
 						</li>
-						<li className='list-inline-item text-light'>
+						<li className='list-inline-item '>
 							<a href='/'>
 								<FontAwesomeIcon
-									className='icon_footer'
+									className='icon_footer text-light'
 									icon={faGithubAlt}
 								></FontAwesomeIcon>
 							</a>
@@ -46,7 +46,14 @@ const App = () => {
 					<p className='text-light'>
 						{' '}
 						© 2020 Copyright:
+<<<<<<< HEAD
 						<a href='/'> Juan Torres, Heidy Florez, Erika Otalvaro</a>
+=======
+						<a href='https://mdbootstrap.com/' className='text-light'>
+							{' '}
+							MDBootstrap.com
+						</a>
+>>>>>>> ae8525bc9cb1ad314d416a5c5b485cd8388c7580
 					</p>
 				</div>
 			</footer>

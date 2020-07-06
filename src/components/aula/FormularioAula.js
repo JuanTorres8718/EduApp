@@ -87,7 +87,7 @@ const FormularioAula = (props) => {
 					/>
 				</div>
 				<div className='text-center'>
-					<button type='submit' className='button-aula w-25 text-light'>
+					<button type='submit' className='button-aula text-light'>
 						Crear
 					</button>
 				</div>

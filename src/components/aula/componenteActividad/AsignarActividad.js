@@ -54,9 +54,11 @@ const AsignarActividad = (props) => {
 						state: { id: id },
 					}}
 				>
-					<FontAwesomeIcon className='arrow-asignar' icon={faArrowLeft} />
+					<FontAwesomeIcon className='arrow-asignar ' icon={faArrowLeft} />
 				</Link>
-				<h5 className='mb-4 Englebert text_title'>Crear nueva actividad</h5>
+				<h5 className='mb-4 Englebert text_title ml-4 mr-3'>
+					Crear nueva actividad
+				</h5>
 			</div>
 			<form onSubmit={onsubmit} className='p-4'>
 				<div className='form-group'>

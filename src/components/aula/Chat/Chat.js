@@ -6,15 +6,15 @@ import '../../../style/Chat.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons'
 
-const Chat = () => {
+const Chat = (props) => {
+	const id = props.location.state.id
 	return (
 		<div className=''>
-			<Nav className='col-lg-4'></Nav>
+			<Nav className='col-lg-4' id={id}></Nav>
 			<div id='chat'>
 				<Mensajes mensaje='me ayudan con el ejercicio 5'></Mensajes>
 				<Mensajes mensaje='¿hoy hay clase?' />
 				<MensajeOtro mensaje='si, hay clase a las 5' />
-
 				<div
 					className='fixed-bottom p-3 border-top d-flex justify-content-between bg-dark '
 					id='boton'
@@ -22,7 +22,7 @@ const Chat = () => {
 					<input
 						type='text'
 						placeholder='escribe aqui tu mensaje'
-						className='rounded col-lg-8'
+						className='rounded col-11'
 					></input>
 					<button type='submit' className='boton'>
 						<FontAwesomeIcon icon={faPaperPlane} />

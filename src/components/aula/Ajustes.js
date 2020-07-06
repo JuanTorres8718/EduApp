@@ -8,8 +8,8 @@ import '../../style/Ajustes.css'
 const Ajustes = (props) => {
 	const [id] = useState(props.location.state.id)
 	return (
-		<div className='fondo_ajustes d-flex justify-content-center '>
-			<div className='container-form pt-4 fondo_formularioAustes mt-4'>
+		<div className='fondo_ajustes d-flex justify-content-center align-items-center vh-100 '>
+			<div className='container-form pt-4 fondo_formularioAustes mt-4 col-10 col-md-8 col-lg-6'>
 				<Link
 					to={{
 						pathname: '/AulaMatematicas',
