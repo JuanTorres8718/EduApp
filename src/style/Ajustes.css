@@ -65,10 +65,10 @@
 @media only screen and (min-width: 700px){
     .icon-edit{   
         position: absolute;
-        right: 100px;
+        right: 43px;
         border: 0px;
     }
     .back-arrow{
-        left: 80px;
+        left: 46px;
     }
 } 

@@ -22,7 +22,7 @@ const Chat = (props) => {
 					<input
 						type='text'
 						placeholder='escribe aqui tu mensaje'
-						className='rounded col-lg-8'
+						className='rounded col-11'
 					></input>
 					<button type='submit' className='boton'>
 						<FontAwesomeIcon icon={faPaperPlane} />
