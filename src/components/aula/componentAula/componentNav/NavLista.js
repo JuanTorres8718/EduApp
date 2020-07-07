@@ -48,7 +48,7 @@ const NavLista = ({ id }) => {
 					}}
 					className='drown-items text-light'
 				>
-					<FontAwesomeIcon icon={faFileSignature} /> Asignacion de actividades
+					<FontAwesomeIcon icon={faFileSignature} /> Asignación de actividades
 				</Link>
 			</li>
 			<li className='nav-item'>

@@ -30,7 +30,7 @@ const VerActividad = (props) => {
 				</p>
 			</div>
 			<div className='form-group'>
-				<small>Fecha limite: 04/05/2020</small>
+				<small>Fecha límite: 04/05/2020</small>
 			</div>
 			<div className='form-group'>
 				<h6>Estudiantes que han entregado:</h6>

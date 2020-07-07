@@ -28,11 +28,11 @@ const ModalQuestion = () => {
 						</button>
 					</div>
 					<div className='modal-body'>
-						¿Como realizar publicaciones?
+						¿Cómo realizar publicaciones?
 						<br />
 						Type something here Lorem ipsu saad Kiryun ha kbu hyudo afewu remju
 						<br />
-						¿Como editar las publicaciones?
+						¿Cómo editar las publicaciones?
 						<br />
 						Type something here Lorem ipsu saad Kiryun ha kbu hyudo afewu remju
 						<br />
@@ -40,7 +40,7 @@ const ModalQuestion = () => {
 						<br />
 						Type something here Lorem ipsu saad Kiryun ha kbu hyudo afewu remju
 						<br />
-						¿Como eliminar una publicacion?
+						¿Cómo eliminar una publicación?
 						<br />
 						Type something here Lorem ipsu saad Kiryun ha kbu hyudo afewu remju
 						<br />

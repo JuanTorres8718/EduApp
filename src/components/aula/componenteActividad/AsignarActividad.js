@@ -84,7 +84,7 @@ const AsignarActividad = (props) => {
 					></textarea>
 				</div>
 				<div className='form-group'>
-					<label htmlFor='date'>Fecha limite de entrega*</label>
+					<label htmlFor='date'>Fecha límite de entrega*</label>
 					<input
 						type='date'
 						name='bday'
@@ -98,7 +98,7 @@ const AsignarActividad = (props) => {
 					/>
 				</div>
 				<div className='form-group'>
-					<label htmlFor='file'>Adjuntar algun documento.</label>
+					<label htmlFor='file'>Adjuntar algún documento.</label>
 					{/* <input type='file' id='hiddenFileInput' /> */}
 				</div>
 				<div className='text-center'>

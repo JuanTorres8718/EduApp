@@ -30,8 +30,8 @@ const Calificaciones = (props) => {
 			</div>
 			<div className='date-send'>
 				<small>
-					Fecha de envio: 04/08/2020 <br />
-					Fecha limite: 05/08/2020
+					Fecha de envío: 04/08/2020 <br />
+					Fecha límite: 05/08/2020
 				</small>
 			</div>
 			<div className='cont-comment'>
