@@ -12,7 +12,7 @@ const Chat = (props) => {
 		<div className=''>
 			<Nav className='col-lg-4' id={id}></Nav>
 			<div id='chat'>
-				<Mensajes mensaje='me ayudan con el ejercicio 5'></Mensajes>
+				<Mensajes mensaje='¿me ayudan con el ejercicio 5 porfavor?'></Mensajes>
 				<Mensajes mensaje='¿hoy hay clase?' />
 				<MensajeOtro mensaje='si, hay clase a las 5' />
 				<div
@@ -21,7 +21,7 @@ const Chat = (props) => {
 				>
 					<input
 						type='text'
-						placeholder='escribe aqui tu mensaje'
+						placeholder='Escribe aquí tu mensaje'
 						className='rounded col-11'
 					></input>
 					<button type='submit' className='boton'>

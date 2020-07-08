@@ -17,7 +17,7 @@ const CardPublicacion = () => {
 					<FontAwesomeIcon className='icon-card' icon={faUser} />
 					<div className='content-subtitle d-flex flex-column'>
 						<h6 className='width-title'>Actividad 1</h6>
-						<p>Operaciones aritmeticas</p>
+						<p>Operaciones aritméticas</p>
 					</div>
 				</div>
 				<img
@@ -26,8 +26,8 @@ const CardPublicacion = () => {
 					alt='matematicas'
 				/>
 				<p className='card-text text-justify'>
-					Compañeros les comparto una foto de como podria ser el trabajo. pueden
-					mirarlo y estudiar, que mañana les preguntare acerca de esto
+					Compañeros les comparto una foto de cómo podría ser el trabajo. Pueden
+					mirarlo y estudiar, que mañana les preguntaré acerca de esto.
 				</p>
 			</div>
 			<div className='card-footer d-flex justify-content-between'>

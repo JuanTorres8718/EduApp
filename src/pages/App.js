@@ -46,7 +46,7 @@ const App = () => {
 					<p className='text-light'>
 						{' '}
 						© 2020 Copyright:
-						<a href='/'> Juan Torres, Heidy Florez, Erika Otalvaro</a>
+						<a href='/' className='text-light'> Juan Torres, Heidy Florez, Erika Otálvaro</a>
 					</p>
 				</div>
 			</footer>

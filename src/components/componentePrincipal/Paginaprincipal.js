@@ -32,7 +32,7 @@ class Principal extends Component {
 						<div className='row mb-2'>
 							<p className='generalfont text-center col-sm-5 ml-sm-5 col-lg-7'>
 								Sabemos que la educación necesita herramientas adicionales para
-								su eficiencia. EduApp te ofrece una pagina dinamica que secciona
+								su eficiencia. EduApp te ofrece una página dinámica que secciona
 								cada tarea educativa.
 							</p>
 							<img
@@ -48,7 +48,7 @@ class Principal extends Component {
 								alt='classroom'
 							></img>
 							<p className='generalfont text-center mt-3 col-sm-6 col-lg-7'>
-								Encontraras una comunicacion fluida con los docentes,
+								Encontraras una comunicación fluida con los docentes,
 								herramientas como videollamadas, clases grabadas, material de
 								apoyo, agenda de actividades, chats y dashboards.
 							</p>

@@ -55,7 +55,7 @@ class Registro extends Component {
 						confirmar: '',
 						numero: '',
 					})
-					this.props.history.push('/ingreso')
+					this.props.history.push('/ingreso', 1)
 				})
 		} else {
 			alert('Las contraseñas no coinciden')
@@ -70,7 +70,7 @@ class Registro extends Component {
 						className='row justify-content-center margen_header col-lg-5 col-md-6 col-sm-12 fondo_formulario col-10'
 						onSubmit={this.handleCreate}
 					>
-						<h2 className='text-center mb-3 mt-3 col-12'>Registrate</h2>
+						<h2 className='text-center mb-3 mt-3 col-12'>Regístrate</h2>
 						<div className='col-md-6 col-6 mt-3'>
 							<input
 								type='text'

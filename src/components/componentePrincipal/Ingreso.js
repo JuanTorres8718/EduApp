@@ -56,6 +56,9 @@ class Ingresar extends Component {
 			<div className='fondo_registro'>
 				<Header></Header>
 				<div className=' d-flex justify-content-center align-items-center vh-100'>
+					<div className='alert alert-light alerta_ingreso' role='alert'>
+						Give it a click if you like.
+					</div>
 					<form
 						onSubmit={this.login}
 						className='row justify-content-center col-lg-5 col-md-6 col-sm-12 fondo_formulario col-10'
@@ -94,7 +97,7 @@ class Ingresar extends Component {
 						</button>
 						<div className='text-center mt-2 col-12 '>
 							<Link to='/Registro' className='text-dark'>
-								¿No tienes una cuenta? Registrate aquí
+								¿No tienes una cuenta? Regístrate aquí
 							</Link>
 						</div>
 						<div className='text-center mt-2 mb-2 col-12'>
