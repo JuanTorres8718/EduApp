@@ -25,6 +25,16 @@ class Ingresar extends Component {
 		}
 	}
 
+	alerta() {
+		if (this.props.location.state !== undefined) {
+			return (
+				<div className='alerta_ingreso' role='alert'>
+					Registro exitoso!
+				</div>
+			)
+		}
+	}
+
 	login(e) {
 		const { email, password } = this.state
 		let cont = 1
@@ -56,9 +66,7 @@ class Ingresar extends Component {
 			<div className='fondo_registro'>
 				<Header></Header>
 				<div className=' d-flex justify-content-center align-items-center vh-100'>
-					<div className='alert alert-light alerta_ingreso' role='alert'>
-						Give it a click if you like.
-					</div>
+					{this.alerta()}
 					<form
 						onSubmit={this.login}
 						className='row justify-content-center col-lg-5 col-md-6 col-sm-12 fondo_formulario col-10'

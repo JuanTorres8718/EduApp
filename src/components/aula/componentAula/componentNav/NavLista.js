@@ -16,14 +16,25 @@ const NavLista = ({ id }) => {
 
 	useEffect(() => {
 		let array = []
-		axios.get('https://api-fake-eduapp.herokuapp.com/usuario').then((res) => {
-			let usuario = res.data
-			for (let i = 0; i < usuario.length; i++) {
-				if (identificador === usuario[i].id) {
-					array.push(usuario[i])
+		let idUsuario = 0
+		axios.get('https://api-fake-eduapp.herokuapp.com/aulas').then((res) => {
+			let aula = res.data
+			for (let i = 0; i < aula.length; i++) {
+				if (identificador === aula[i].id) {
+					idUsuario = aula[i].usuario
 				}
 			}
-			setPerfil(array)
+			axios
+				.get('https://api-fake-eduapp.herokuapp.com/usuario')
+				.then((respuesta) => {
+					let usuario = respuesta.data
+					for (let i = 0; i < usuario.length; i++) {
+						if (idUsuario === usuario[i].id) {
+							array.push(usuario[i])
+						}
+					}
+					setPerfil(array)
+				})
 		})
 	}, [identificador])
 

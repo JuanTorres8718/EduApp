@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-// import CircleComponent from '../circulo/ComponenteCirculo'
 import '../../style/FormularioAula.css'
 import axios from 'axios'
 
@@ -48,11 +47,7 @@ const FormularioAula = (props) => {
 			<div className='form-grop text-center pt-5 pb-4 Englebert'>
 				<h2>Crea tu aula</h2>
 			</div>
-			<form
-				onSubmit={onsubmit}
-				// action="/AulaMatematicas"
-				className='p-4'
-			>
+			<form onSubmit={onsubmit} className='p-4'>
 				<div className='form-group'>
 					<label htmlFor='materia'>Nombre de la materia*</label>
 					<input

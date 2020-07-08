@@ -47,8 +47,38 @@
     justify-content: space-between;
 }
 
+.alerta_ingreso{
+    position: absolute;
+    padding: .75rem 1.25rem;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    bottom: 8px;
+    right: 25px;
+    color: #131313;
+    background-color: #fefefe;
+    border-color: #060627;
+    animation-name: visible;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
 .margin-home{
     margin-top: 70px;
+}
+
+@keyframes visible {
+    0% {
+      opacity: 0.5;
+      transform: translateX(300px);
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0px);
+    }
 }
 
 @media only screen and (min-width: 500px){

@@ -97,10 +97,6 @@ const AsignarActividad = (props) => {
 						}}
 					/>
 				</div>
-				<div className='form-group'>
-					<label htmlFor='file'>Adjuntar algún documento.</label>
-					{/* <input type='file' id='hiddenFileInput' /> */}
-				</div>
 				<div className='text-center'>
 					<button
 						type='submit'
